@@ -1,0 +1,6 @@
+[api]
+host = http://47.243.60.31:9200
+url = /auth/getJwtToken
+
+[data]
+test_account = xiaoyu1
