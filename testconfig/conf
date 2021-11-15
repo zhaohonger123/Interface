@@ -1,5 +1,5 @@
 [api]
-host = http://47.243.60.31:9200
+host = http://******
 url = /auth/getJwtToken
 
 [data]
