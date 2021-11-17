@@ -7,7 +7,6 @@
    date：          2021/11/9
 -------------------------------------------------
 """
-import json
 import openpyxl
 import os
 
@@ -40,27 +39,33 @@ class OperateExcel:
         for i in data_list[1:]:
             x = dict(zip(data_list[0], i))
             data_all.append(x)
+        self.wb.close()
         return data_all
 
-    def write_excel(self, actually, result, **header):
+    def write_excel(self, row, actually, result):
         """
-        将actually和result分别写入H和I列，并按最大行进行遍历写入
+        将actually和result分别写入H和I列的第row行
+        :param row:要写入的行
         :param result:要传入的测试结果，如:pass，failed，blocked
         :param actually:要写入的数据
-        :param header:非必传，传值为字典型,如：token="token"
+        :return:
+        """
+        print(row, actually, result)
+        self.wk["H{}".format(row)] = actually
+        self.wk["I{}".format(row)] = result
+        self.wb.save(self.path)
+        self.wb.close()
+
+    def write_header(self, header):
+        """
+        将header写入excel
+        :param header: header值
         :return:
         """
         for i in range(2, self.wk.max_row + 1):
-            # 如果不传header则往H和I列写入实际返回结果和测试结果
-            if header == {}:
-                self.wk["H{}".format(i)] = actually
-                self.wk["I{}".format(i)] = result
-                self.wb.save(self.path)
-                self.wb.close()
-            else:
-                # 将header转化为json字符串
-                self.wk["E{}".format(i)] = json.dumps(header)
-                self.wk["H{}".format(i)] = actually
-                self.wk["I{}".format(i)] = result
-                self.wb.save(self.path)
-                self.wb.close()
+            self.wk["E{}".format(i)] = header
+            self.wb.save(self.path)
+            self.wb.close()
+
+
+# OperateExcel("add_bankcard").write_excel(2, "s", "pass")

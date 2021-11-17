@@ -13,17 +13,16 @@ from common.operate_log import log
 import json
 
 
-def get_token(test_account):
+def get_token(account):
     """
-    通过调用获取认证接口拿到token值
-    :param test_account: 测试账号
+    使用配置文件conf中test_account的值，通过调用获取认证接口拿到test_account的token值
+    :param account: 测试账号
     :return: 测试账号的token值
     """
     # 获取接口地址
     test_url = get_config("api", "host") + get_config("api", "url")
     # 获取测试账号
-    account = get_config("data", test_account)
-    test_params = '{"account":"%s"}' % account
+    test_params = '{"account":"%s"}' % get_config("data", account)
     log.info("获取账号{}的token".format(account))
     # 将test_params转化成字典型
     test_data = json.loads(test_params)
@@ -31,8 +30,12 @@ def get_token(test_account):
     test_http = requests.get(url=test_url, params=test_data).text
     # 将返回值由str转化为字典型
     test_res = json.loads(test_http)
+    # print(test_res)
     # 判断接口是否成功并返回token值
     if "code" in test_http and test_res["msg"] == "success":
-        return test_res["data"]
+        # 拼接header成字典形式
+        header = '{"Authorization": "%s"}' % test_res["data"]
+        # print(header)
+        return header
     else:
         log.error("请求失败{}".format(test_http))

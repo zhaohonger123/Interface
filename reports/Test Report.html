@@ -7159,24 +7159,91 @@ body.skin-3 {
 
 
     var resultData = {
-    "testPass": 1,
+    "testPass": 7,
     "testResult": [
+        {
+            "className": "AddBankCard",
+            "methodName": "test_add_bankcard_1",
+            "description": "\n        新增银行卡\n        ",
+            "spendTime": "0.503 s",
+            "status": "成功",
+            "log": [
+                "2 {\"code\":999,\"msg\":\"该卡号银行卡已添加,请勿重复添加\",\"data\":null} failed",
+                ""
+            ]
+        },
+        {
+            "className": "AddBankCard",
+            "methodName": "test_add_bankcard_2",
+            "description": "\n        新增银行卡\n        ",
+            "spendTime": "0.494 s",
+            "status": "成功",
+            "log": [
+                "3 {\"code\":999,\"msg\":\"该卡号银行卡已添加,请勿重复添加\",\"data\":null} failed",
+                ""
+            ]
+        },
+        {
+            "className": "AddBankCard",
+            "methodName": "test_add_bankcard_3",
+            "description": "\n        新增银行卡\n        ",
+            "spendTime": "0.487 s",
+            "status": "成功",
+            "log": [
+                "4 {\"code\":999,\"msg\":\"银行账号不能为空！\",\"data\":null} pass",
+                ""
+            ]
+        },
+        {
+            "className": "AddBankCard",
+            "methodName": "test_add_bankcard_4",
+            "description": "\n        新增银行卡\n        ",
+            "spendTime": "0.506 s",
+            "status": "成功",
+            "log": [
+                "5 {\"code\":999,\"msg\":\"该卡号银行卡已添加,请勿重复添加\",\"data\":null} failed",
+                ""
+            ]
+        },
+        {
+            "className": "AddBankCard",
+            "methodName": "test_add_bankcard_5",
+            "description": "\n        新增银行卡\n        ",
+            "spendTime": "0.489 s",
+            "status": "成功",
+            "log": [
+                "6 {\"code\":999,\"msg\":\"开户地址不能为空！\",\"data\":null} pass",
+                ""
+            ]
+        },
+        {
+            "className": "AddBankCard",
+            "methodName": "test_add_bankcard_6",
+            "description": "\n        新增银行卡\n        ",
+            "spendTime": "0.492 s",
+            "status": "成功",
+            "log": [
+                "7 {\"code\":999,\"msg\":\"该卡号银行卡已添加,请勿重复添加\",\"data\":null} pass",
+                ""
+            ]
+        },
         {
             "className": "BankList",
             "methodName": "test_bank_list_1",
             "description": "\n        获取用户银行卡列表\n        ",
-            "spendTime": "0.615 s",
+            "spendTime": "0.577 s",
             "status": "成功",
             "log": [
+                "2 {\"code\":0,\"msg\":\"success\",\"data\":[{\"id\":12,\"createTime\":\"2021-11-04 14:37:19\",\"createBy\":null,\"updateTime\":\"2021-11-04 14:37:19\",\"updateBy\":null,\"bankName\":\"中兴银行\",\"bankLogo\":\"/public/img/322632d9-c4c4-43c1-ab33-a97a5c1d2a12.png\",\"bankType\":0,\"disable\":0,\"remark\":\"\"},{\"id\":11,\"createTime\":\"2021-11-04 14:36:52\",\"createBy\":null,\"updateTime\":\"2021-11-04 14:36:52\",\"updateBy\":null,\"bankName\":\"招商银行\",\"bankLogo\":\"/public/img/dc4430d7-f4c0-4f21-8229-dbe57a417977.png\",\"bankType\":0,\"disable\":0,\"remark\":\"\"},{\"id\":10,\"createTime\":\"2021-11-04 14:36:38\",\"createBy\":null,\"updateTime\":\"2021-11-04 14:36:38\",\"updateBy\":null,\"bankName\":\"邮政银行\",\"bankLogo\":\"/public/img/2388c825-81e8-4b15-a86e-2ba2c940dbe0.png\",\"bankType\":0,\"disable\":0,\"remark\":\"\"},{\"id\":9,\"createTime\":\"2021-11-04 14:36:23\",\"createBy\":null,\"updateTime\":\"2021-11-04 14:36:23\",\"updateBy\":null,\"bankName\":\"新业银行\",\"bankLogo\":\"/public/img/2418bbcf-9ca8-483b-978c-8caf2984bdd5.png\",\"bankType\":0,\"disable\":0,\"remark\":\"\"},{\"id\":8,\"createTime\":\"2021-11-04 14:36:06\",\"createBy\":null,\"updateTime\":\"2021-11-04 14:36:06\",\"updateBy\":null,\"bankName\":\"浦发银行\",\"bankLogo\":\"/public/img/16d404be-3ca3-49ce-902d-4b7d81a844ea.png\",\"bankType\":0,\"disable\":0,\"remark\":\"\"},{\"id\":7,\"createTime\":\"2021-11-04 14:35:38\",\"createBy\":null,\"updateTime\":\"2021-11-04 14:35:38\",\"updateBy\":null,\"bankName\":\"农业银行\",\"bankLogo\":\"/public/img/ef6cb960-01cf-4731-b14d-a13e3a8c3b0b.png\",\"bankType\":0,\"disable\":0,\"remark\":\"\"},{\"id\":6,\"createTime\":\"2021-11-04 14:35:05\",\"createBy\":null,\"updateTime\":\"2021-11-04 14:35:05\",\"updateBy\":null,\"bankName\":\"民生银行\",\"bankLogo\":\"/public/img/88e1cd2d-4c52-4e97-8172-16e4397cfd50.png\",\"bankType\":0,\"disable\":0,\"remark\":\"\"},{\"id\":5,\"createTime\":\"2021-11-04 14:34:43\",\"createBy\":null,\"updateTime\":\"2021-11-04 14:34:43\",\"updateBy\":null,\"bankName\":\"交通银行\",\"bankLogo\":\"/public/img/f22e7561-0288-4cd7-ac0e-bba1a238f18f.png\",\"bankType\":0,\"disable\":0,\"remark\":\"\"},{\"id\":4,\"createTime\":\"2021-11-04 14:34:26\",\"createBy\":null,\"updateTime\":\"2021-11-04 14:34:26\",\"updateBy\":null,\"bankName\":\"建设银行\",\"bankLogo\":\"/public/img/894a59f7-57ca-4b62-a6c1-b9648b9ff561.png\",\"bankType\":0,\"disable\":0,\"remark\":\"\"},{\"id\":3,\"createTime\":\"2021-11-04 14:34:07\",\"createBy\":null,\"updateTime\":\"2021-11-04 14:34:07\",\"updateBy\":null,\"bankName\":\"广东发展银行\",\"bankLogo\":\"/public/img/6d6720b3-efac-433e-9a9e-9cc7dea7ca10.png\",\"bankType\":0,\"disable\":0,\"remark\":\"\"},{\"id\":2,\"createTime\":\"2021-11-02 18:35:14\",\"createBy\":null,\"updateTime\":\"2021-11-04 13:40:40\",\"updateBy\":\"17\",\"bankName\":\"光大银行\",\"bankLogo\":\"/public/img/f134232c-1f57-442e-bf5c-2cd9f7cf569c.png\",\"bankType\":0,\"disable\":0,\"remark\":\"\"},{\"id\":1,\"createTime\":\"2021-11-02 18:34:57\",\"createBy\":null,\"updateTime\":\"2021-11-03 15:04:57\",\"updateBy\":\"6\",\"bankName\":\"工商银行\",\"bankLogo\":\"/public/img/6fe5d4fe-65f0-40f8-ae5c-809a954cb115.png\",\"bankType\":0,\"disable\":0,\"remark\":\"\"}]} pass",
                 ""
             ]
         }
     ],
     "testName": "接口测试报告",
-    "testAll": 1,
+    "testAll": 7,
     "testFail": 0,
-    "beginTime": "2021-11-13 22:26:46",
-    "totalTime": "1s",
+    "beginTime": "2021-11-17 19:18:15",
+    "totalTime": "3s",
     "testSkip": 0,
     "testError": 0
 };
