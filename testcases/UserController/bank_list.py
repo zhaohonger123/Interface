@@ -29,14 +29,13 @@ class BankList(unittest.TestCase):
     cases = excel.read_excel()
 
     def setUp(self):
-        pass
+        log.info("................开始执行用例................")
 
     @data(*cases)
     def test_bank_list(self, case):
         """
         获取用户银行卡列表
         """
-        log.info("..............测试用例开始执行...............")
         log.info("当前执行用例：{}, 请求url:{}".format(case["标题"], case["URL"]))
         # 实例化RequestType并执行用例
         test_response = RequestType().get_request(case["请求方式"], case["URL"], json.loads(case["header"]))
@@ -46,13 +45,15 @@ class BankList(unittest.TestCase):
         if "code" in test_response:
             try:
                 self.assertEqual(case["预期返回"], test_assert)
-                log.info("当前断言部分：预期:{},实际：{}".format(case["预期返回"], test_assert))
-                # 将实际返回值写入测试用例文件，并将测试结果置为pass
-                excel.write_excel(case["id"] + 1, test_response, "pass")
             except AssertionError as e:
-                log.error(e)
                 # 将实际返回值写入测试用例文件，并将测试结果置为failed
                 excel.write_excel(case["id"] + 1, test_response, "failed")
+                log.error(e)
+                raise
+            else:
+                # 将实际返回值写入测试用例文件，并将测试结果置为pass
+                excel.write_excel(case["id"] + 1, test_response, "pass")
+                log.info("当前断言部分：预期:{},实际：{}".format(case["预期返回"], test_assert))
         else:
             log.error("请求失败 {}".format(test_response))
 

@@ -50,11 +50,12 @@ class OperateExcel:
         :param actually:要写入的数据
         :return:
         """
-        print(row, actually, result)
+        # print(row, actually, result)
         self.wk["H{}".format(row)] = actually
         self.wk["I{}".format(row)] = result
         self.wb.save(self.path)
         self.wb.close()
+        print("测试结果写完关闭")
 
     def write_header(self, header):
         """
@@ -64,8 +65,11 @@ class OperateExcel:
         """
         for i in range(2, self.wk.max_row + 1):
             self.wk["E{}".format(i)] = header
-            self.wb.save(self.path)
-            self.wb.close()
+        self.wb.save(self.path)
+        self.wb.close()
+        print("header写完关闭")
 
 
-# OperateExcel("add_bankcard").write_excel(2, "s", "pass")
+# OperateExcel("add_bankcard").write_header("header")
+# test = '{"code":999,"msg":"银行账号不能为空！","data":null}'
+# OperateExcel("add_bankcard").write_excel(2, test, "pass")
