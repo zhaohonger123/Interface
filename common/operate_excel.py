@@ -69,7 +69,3 @@ class OperateExcel:
         self.wb.close()
         print("header写完关闭")
 
-
-# OperateExcel("add_bankcard").write_header("header")
-# test = '{"code":999,"msg":"银行账号不能为空！","data":null}'
-# OperateExcel("add_bankcard").write_excel(2, test, "pass")
