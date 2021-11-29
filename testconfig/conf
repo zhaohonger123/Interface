@@ -1,6 +1,15 @@
 [api]
-host = http:****
+host = http://**
 url = /auth/getJwtToken
 
+[mysql]
+host = ***
+user = **
+password = **
+port = **
+database = **
+
 [data]
-test_account = xiaoyu1
+test_account1 = xiaoyu1
+test_account2 = xiaoyu2
+

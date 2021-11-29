@@ -40,7 +40,6 @@ class AddBankCard(unittest.TestCase):
         log.info("当前执行用例：{}".format(case["标题"]))
         test_response = RequestType().get_request(case["请求方式"], case["URL"], json.loads(case["header"]),
                                                   json.loads(case["param"]))
-        # print(type(test_response))
         # 将返回值转化为json格式，并获取msg值
         test_actually = json.loads(test_response)["msg"]
         try:
@@ -48,16 +47,13 @@ class AddBankCard(unittest.TestCase):
             self.assertEqual(case["预期返回"], test_actually)
         except AssertionError as e:
             # 断言失败则将返回写入Excel并将测试结果置为failed
-            excel.write_excel(int(case["id"] + 1), test_response, "failed")
+            excel.write_excel(case["id"] + 1, test_response, "failed")
             log.error("断言失败{}".format(e))
             raise
         else:
             # 将返回与测试结果写入Excel
-            excel.write_excel(int(case["id"] + 1), test_response, "pass")
+            excel.write_excel(case["id"] + 1, test_response, "pass")
             log.info("当前预期结果：{},实际返回结果:{}".format(case["预期返回"], test_actually))
 
     def tearDown(self):
         pass
-
-# if __name__ == "__main__":
-#     unittest.main()

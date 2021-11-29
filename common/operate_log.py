@@ -41,7 +41,8 @@ class OperateLog:
         self.ft = logging.Formatter('[%(asctime)s][%(filename)s:%(lineno)d][%(levelname)s] : %(message)s')
 
         # 定义一个FileHandle将日志输出到磁盘文件,文件接近或超过maxBytes，则依次创建Interface.log,Interface1.log
-        self.fh = handlers.RotatingFileHandler(filename=self.logname,mode='w+', maxBytes=1024 * 100, backupCount=5, encoding="utf-8")
+        self.fh = handlers.RotatingFileHandler(filename=self.logname, mode='w+', maxBytes=1024 * 100, backupCount=5,
+                                               encoding="utf-8")
         # 设置文件日志的最小级别
         self.fh.setLevel("INFO")
         # 设置文件日志输出格式

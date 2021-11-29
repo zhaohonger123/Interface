@@ -8,7 +8,7 @@
 -------------------------------------------------
 """
 import requests
-from common.operate_config import get_config
+from common.operate_config import GetConfig
 
 
 class RequestType:
@@ -24,7 +24,7 @@ class RequestType:
         :return: 接口返回值
         """
         # 获取host
-        host = get_config("api", "host")
+        host = GetConfig().get_config("api", "host")
         resp = None
         if method == "get":
             resp = requests.get(url=host + url, headers=headers, params=params)
