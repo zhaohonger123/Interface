@@ -8,7 +8,7 @@
 -------------------------------------------------
 """
 import requests
-from common.operate_config import get_config
+from common.operate_config import GetConfig
 from common.operate_log import log
 import json
 
@@ -20,9 +20,9 @@ def get_token(account):
     :return: 测试账号的token值
     """
     # 获取接口地址
-    test_url = get_config("api", "host") + get_config("api", "url")
+    test_url = GetConfig().get_config("api", "host") + GetConfig().get_config("api", "url")
     # 获取测试账号
-    test_params = '{"account":"%s"}' % get_config("data", account)
+    test_params = '{"account":"%s"}' % GetConfig().get_config("data", account)
     log.info("获取账号{}的token".format(account))
     # 将test_params转化成字典型
     test_data = json.loads(test_params)
