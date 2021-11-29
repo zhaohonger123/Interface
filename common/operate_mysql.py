@@ -47,8 +47,3 @@ class OperateMysql:
     def close(self):
         self.cs.close()
         self.db.close()
-
-
-# sql = "select * from bankcards where id=1"
-# res = OperateMysql().search(sql)
-# print(res)
