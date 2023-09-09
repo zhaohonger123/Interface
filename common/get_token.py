@@ -19,23 +19,35 @@ def get_token(account):
     :param account: 测试账号
     :return: 测试账号的token值
     """
-    # 获取接口地址
-    test_url = GetConfig().get_config("api", "host") + GetConfig().get_config("api", "url")
-    # 获取测试账号
-    test_params = '{"account":"%s"}' % GetConfig().get_config("data", account)
-    log.info("获取账号{}的token".format(account))
-    # 将test_params转化成字典型
-    test_data = json.loads(test_params)
-    # 调用request请求
-    test_http = requests.get(url=test_url, params=test_data).text
-    # 将返回值由str转化为字典型
-    test_res = json.loads(test_http)
-    # print(test_res)
-    # 判断接口是否成功并返回token值
-    if "code" in test_http and test_res["msg"] == "success":
-        # 拼接header成字典形式
-        header = '{"Authorization": "%s"}' % test_res["data"]
-        # print(header)
-        return header
-    else:
-        log.error("请求失败{}".format(test_http))
+    # 通过配置文件获取登录账号信息
+    login_account = GetConfig().get_config("data", account)
+    user_pwd = GetConfig().get_config("data", 'user_pwd')
+    # 请求接口地址
+    rq_url = GetConfig().get_config('api', 'host') + GetConfig().get_config('api', 'path')
+    rq_headers = {
+        "Content-Type": "application/json"
+    }
+    data = {
+        "username": login_account,
+        "password": user_pwd
+    }
+    # 登录请求用户token
+    log.info('登录用户{}，获取token'.format(login_account))
+    try:
+        response = requests.post(rq_url, headers=rq_headers, params=data)
+        log.info("请求成功")
+        result = json.loads(response.text)
+        # 通过逻辑判断执行获取Token操作
+        if 'accessToken' in result["datas"]:
+            log.info("获取Token数据成功")
+
+            return result["datas"]["accessToken"]
+        else:
+            log.error("获取Token数据异常")
+            raise
+    except Exception as e:
+        log.error("因为{}执行失败".format(e))
+
+
+if __name__ == '__main__':
+    print(get_token('user1'))

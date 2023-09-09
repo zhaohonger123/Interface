@@ -72,3 +72,8 @@ class OperateExcel:
             ws["E{}".format(i)] = header
         wb.save(self.file)
         wb.close()
+
+
+# if __name__ == '__main__':
+#     A = OperateExcel(sheet_name="CommonApi")
+#     print(A.read_excel())

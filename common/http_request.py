@@ -12,10 +12,12 @@ from common.operate_config import GetConfig
 
 
 class RequestType:
+
     @staticmethod
-    def get_request(method, url, headers=None, params=None, files=None):
+    def get_request(method, url, headers=None, params=None, files=None, json=None):
         """
         根据接口不通请求方式选择调用不通方法
+        :param json: json请求参数
         :param method: 请求方式
         :param url: 接口地址
         :param headers: 请求头
@@ -24,13 +26,15 @@ class RequestType:
         :return: 接口返回值
         """
         # 获取host
-        host = GetConfig().get_config("api", "host")
+        # host = GetConfig().get_config("api", "host")
+        host = "http://gateway.fxdd6678.cc"
         resp = None
+        # print(host)
         if method == "get":
             resp = requests.get(url=host + url, headers=headers, params=params)
 
         elif method == "post":
-            resp = requests.post(url=host + url, headers=headers, data=params, files=files)
+            resp = requests.post(url=host + url, headers=headers, params=params, files=files)
 
         elif method == "put":
             resp = requests.put(url=host + url, headers=headers, data=params, files=files)

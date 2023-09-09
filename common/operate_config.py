@@ -14,7 +14,7 @@ import configparser
 class GetConfig:
     def __init__(self):
         # 配置文件路径
-        self.config_path = os.path.join(os.path.dirname(os.path.abspath(".")), "testconfig", "conf")
+        self.config_path = os.path.join(os.path.dirname(os.path.abspath("..")), r'testconfig\conf.ini')
 
     def get_config(self, section, option):
         """
@@ -47,3 +47,11 @@ class GetConfig:
         # 得到section中option值，返回string类型
         res = test_config.getint(section, option)
         return res
+
+    def get_path(self):
+        return self.config_path
+
+
+if __name__ == '__main__':
+    A = GetConfig()
+    A.get_config('api', 'host')

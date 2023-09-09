@@ -22,7 +22,7 @@ test_loader = unittest.TestLoader()
 test_discover = test_loader.discover(case_path, pattern="*.py", top_level_dir=None)
 # 将空用例排除
 for case in test_discover:
-    if case == []:
+    if not case:
         pass
     else:
         test_suite.addTests(case)
