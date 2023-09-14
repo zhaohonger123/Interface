@@ -33,4 +33,4 @@ for case in test_discover:
 
 if __name__ == "__main__":
     result = BeautifulReport(test_suite)
-    result.report(filename="Test Report", description="接口测试报告", report_dir=report_path)
+    result.report(filename="Test Report", description="接口测试报告", log_path=report_path)

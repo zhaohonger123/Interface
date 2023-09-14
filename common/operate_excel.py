@@ -55,8 +55,8 @@ class OperateExcel:
         ws = wb[self.sheet_name]
         # self.ws.cell(row=row, column=8).value = actually
         # self.ws.cell(row=row, column=9).value = result
-        ws["H{}".format(row)] = actually
-        ws["I{}".format(row)] = result
+        ws["I{}".format(row)] = actually
+        ws["J{}".format(row)] = result
         wb.save(self.file)
         wb.close()
 

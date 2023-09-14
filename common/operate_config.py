@@ -14,7 +14,7 @@ import configparser
 class GetConfig:
     def __init__(self):
         # 配置文件路径
-        self.config_path = os.path.join(os.path.dirname(os.path.abspath("..")), r'testconfig\conf.ini')
+        self.config_path = os.path.join(os.path.dirname(os.path.abspath("...")), r'testconfig\conf.ini')
 
     def get_config(self, section, option):
         """

@@ -31,7 +31,7 @@ class RequestType:
         resp = None
         # print(host)
         if method == "get":
-            resp = requests.get(url=host + url, headers=headers, params=params)
+            resp = requests.get(url=host + url, headers=headers, params=params, json=json)
 
         elif method == "post":
             resp = requests.post(url=host + url, headers=headers, params=params, files=files)
