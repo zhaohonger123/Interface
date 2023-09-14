@@ -1,0 +1,522 @@
+[2023-09-13 19:42:06,460][BetDetail.py:21][INFO] : ................开始执行用例>>>BetDetail<<<................
+[2023-09-13 19:42:06,461][BetDetail.py:26][INFO] : >>>>开始组装请求头数据<<<<
+[2023-09-13 19:42:06,462][get_token.py:35][INFO] : 登录用户Test001，获取token
+[2023-09-13 19:42:06,723][get_token.py:38][INFO] : 请求成功
+[2023-09-13 19:42:06,724][get_token.py:42][INFO] : 获取Token数据成功
+[2023-09-13 19:42:06,724][BetDetail.py:29][INFO] : >>>>请求头数据组装完成<<<<
+[2023-09-13 19:42:06,724][BetDetail.py:31][INFO] : 开始执行用例：BetDetail, 用例条件是>>>Normal<<<, 请求params是 >>>:{'bootNo':'230911-12','gameId':101,'roundNo':'MB-30','tableNo':939}<<<
+[2023-09-13 19:42:06,921][BetDetail.py:47][INFO] : 当前断言部分：预期:{"datas":[{"playName":"P","calcTime":"2023-09-11 17:55:00","betMoney":1.00,"betValidMoney":1.00,"winLossMoney":-1.00}],"resp_code":0,"resp_msg":"succeed"},实际：{'datas': [{'playName': 'P', 'calcTime': '2023-09-11 17:55:00', 'betMoney': 1.0, 'betValidMoney': 1.0, 'winLossMoney': -1.0}], 'resp_code': 0, 'resp_msg': 'succeed'}
+[2023-09-13 19:42:06,922][BetDetail.py:26][INFO] : >>>>开始组装请求头数据<<<<
+[2023-09-13 19:42:06,923][get_token.py:35][INFO] : 登录用户Test001，获取token
+[2023-09-13 19:42:07,171][get_token.py:38][INFO] : 请求成功
+[2023-09-13 19:42:07,172][get_token.py:42][INFO] : 获取Token数据成功
+[2023-09-13 19:42:07,172][BetDetail.py:29][INFO] : >>>>请求头数据组装完成<<<<
+[2023-09-13 19:42:07,172][BetDetail.py:31][INFO] : 开始执行用例：BetDetail, 用例条件是>>>bootNo error<<<, 请求params是 >>>:{'bootNo':'230911-00','gameId':101,'roundNo':'MB-30','tableNo':939}<<<
+[2023-09-13 19:42:07,314][BetDetail.py:47][INFO] : 当前断言部分：预期:{"resp_code":0,"resp_msg":"succeed"},实际：{'resp_code': 0, 'resp_msg': 'succeed'}
+[2023-09-13 19:42:07,315][BetDetail.py:26][INFO] : >>>>开始组装请求头数据<<<<
+[2023-09-13 19:42:07,316][get_token.py:35][INFO] : 登录用户Test001，获取token
+[2023-09-13 19:42:07,554][get_token.py:38][INFO] : 请求成功
+[2023-09-13 19:42:07,554][get_token.py:42][INFO] : 获取Token数据成功
+[2023-09-13 19:42:07,554][BetDetail.py:29][INFO] : >>>>请求头数据组装完成<<<<
+[2023-09-13 19:42:07,555][BetDetail.py:31][INFO] : 开始执行用例：BetDetail, 用例条件是>>>gameId error<<<, 请求params是 >>>:{'bootNo':'230911-12','gameId':100,'roundNo':'MB-30','tableNo':939}<<<
+[2023-09-13 19:42:07,692][BetDetail.py:47][INFO] : 当前断言部分：预期:{"resp_code":0,"resp_msg":"succeed"},实际：{'resp_code': 0, 'resp_msg': 'succeed'}
+[2023-09-13 19:42:07,692][BetDetail.py:26][INFO] : >>>>开始组装请求头数据<<<<
+[2023-09-13 19:42:07,693][get_token.py:35][INFO] : 登录用户Test001，获取token
+[2023-09-13 19:42:07,928][get_token.py:38][INFO] : 请求成功
+[2023-09-13 19:42:07,929][get_token.py:42][INFO] : 获取Token数据成功
+[2023-09-13 19:42:07,929][BetDetail.py:29][INFO] : >>>>请求头数据组装完成<<<<
+[2023-09-13 19:42:07,929][BetDetail.py:31][INFO] : 开始执行用例：BetDetail, 用例条件是>>>tableNo error<<<, 请求params是 >>>:{'bootNo':'230911-12','gameId':101,'roundNo':'MB-30','tableNo':930}<<<
+[2023-09-13 19:42:08,097][BetDetail.py:47][INFO] : 当前断言部分：预期:{"resp_code":0,"resp_msg":"succeed"},实际：{'resp_code': 0, 'resp_msg': 'succeed'}
+[2023-09-13 19:42:08,097][BetDetail.py:26][INFO] : >>>>开始组装请求头数据<<<<
+[2023-09-13 19:42:08,098][get_token.py:35][INFO] : 登录用户Test001，获取token
+[2023-09-13 19:42:08,357][get_token.py:38][INFO] : 请求成功
+[2023-09-13 19:42:08,358][get_token.py:42][INFO] : 获取Token数据成功
+[2023-09-13 19:42:08,358][BetDetail.py:29][INFO] : >>>>请求头数据组装完成<<<<
+[2023-09-13 19:42:08,358][BetDetail.py:31][INFO] : 开始执行用例：BetDetail, 用例条件是>>>roundNo error<<<, 请求params是 >>>:{'bootNo':'230911-12','gameId':101,'roundNo':'MB-33','tableNo':939}<<<
+[2023-09-13 19:42:08,505][BetDetail.py:47][INFO] : 当前断言部分：预期:{"resp_code":0,"resp_msg":"succeed"},实际：{'resp_code': 0, 'resp_msg': 'succeed'}
+[2023-09-13 19:42:08,505][BetDetail.py:59][INFO] : ................执行用例>>>BetDetail<<<结束................
+[2023-09-13 19:42:08,506][BetRecords.py:18][INFO] : ................开始执行用例>>>BetRecords<<<................
+[2023-09-13 19:42:08,506][BetRecords.py:22][INFO] : >>>>开始组装请求头数据<<<<
+[2023-09-13 19:42:08,507][get_token.py:35][INFO] : 登录用户Test001，获取token
+[2023-09-13 19:42:08,741][get_token.py:38][INFO] : 请求成功
+[2023-09-13 19:42:08,741][get_token.py:42][INFO] : 获取Token数据成功
+[2023-09-13 19:42:08,741][BetRecords.py:25][INFO] : >>>>请求头数据组装完成<<<<
+[2023-09-13 19:42:08,742][BetRecords.py:27][INFO] : 开始执行用例：BetRecords, 用例条件是>>>Normal<<<, 请求params是: >>>{"currPage":1,"pageSize":10,"startDate":"2023-09-09 00:00:00","endDate":"2023-09-09 23:59:59"}<<<
+[2023-09-13 19:42:08,883][BetRecords.py:38][INFO] : 当前断言部分：预期:{'datas':{'pageResult':{'currPage':1,'pageSize':10,'totalPage':1,'count':1,'data':[{'gameId':101,'gameName':'baccarat','tableNo':'939','bootNo':'230909-01','roundNo':'MB-22','calcTime':'2023-09-0911:07:32','betMoney':5.0,'betValidMoney':5.0,'winLossMoney':-5.0}]},'subBetTotal':{'betMoney':5.0,'validBetMoney':5.0,'winLossMoney':-5.0},'betTotal':{'betMoney':5.0,'winLossMoney':-5.0}},'resp_code':0,'resp_msg':'succeed'},实际：{'datas': {'pageResult': {'currPage': 1, 'pageSize': 10, 'totalPage': 1, 'count': 1, 'data': [{'gameId': 101, 'gameName': 'baccarat', 'tableNo': '939', 'bootNo': '230909-01', 'roundNo': 'MB-22', 'calcTime': '2023-09-09 11:07:32', 'betMoney': 5.0, 'betValidMoney': 5.0, 'winLossMoney': -5.0}]}, 'subBetTotal': {'betMoney': 5.0, 'validBetMoney': 5.0, 'winLossMoney': -5.0}, 'betTotal': {'betMoney': 5.0, 'winLossMoney': -5.0}}, 'resp_code': 0, 'resp_msg': 'succeed'}
+[2023-09-13 19:42:08,883][BetRecords.py:22][INFO] : >>>>开始组装请求头数据<<<<
+[2023-09-13 19:42:08,884][get_token.py:35][INFO] : 登录用户Test001，获取token
+[2023-09-13 19:42:09,121][get_token.py:38][INFO] : 请求成功
+[2023-09-13 19:42:09,122][get_token.py:42][INFO] : 获取Token数据成功
+[2023-09-13 19:42:09,122][BetRecords.py:25][INFO] : >>>>请求头数据组装完成<<<<
+[2023-09-13 19:42:09,122][BetRecords.py:27][INFO] : 开始执行用例：BetRecords, 用例条件是>>>currPage error<<<, 请求params是: >>>{"currPage":"","pageSize":10,"startDate":"2023-09-09 00:00:00","endDate":"2023-09-09 23:59:59"}<<<
+[2023-09-13 19:42:09,268][BetRecords.py:43][INFO] : 当前断言部分：预期:{'resp_code':1,'resp_msg':'failed'},实际：{'resp_code': 1, 'resp_msg': 'failed'}
+[2023-09-13 19:42:09,268][BetRecords.py:22][INFO] : >>>>开始组装请求头数据<<<<
+[2023-09-13 19:42:09,269][get_token.py:35][INFO] : 登录用户Test001，获取token
+[2023-09-13 19:42:09,504][get_token.py:38][INFO] : 请求成功
+[2023-09-13 19:42:09,504][get_token.py:42][INFO] : 获取Token数据成功
+[2023-09-13 19:42:09,505][BetRecords.py:25][INFO] : >>>>请求头数据组装完成<<<<
+[2023-09-13 19:42:09,505][BetRecords.py:27][INFO] : 开始执行用例：BetRecords, 用例条件是>>>pageSize error<<<, 请求params是: >>>{"currPage":1,"pageSize":"","startDate":"2023-09-09 00:00:00","endDate":"2023-09-09 23:59:59"}<<<
+[2023-09-13 19:42:09,661][BetRecords.py:43][INFO] : 当前断言部分：预期:{'resp_code':1,'resp_msg':'failed'},实际：{'resp_code': 1, 'resp_msg': 'failed'}
+[2023-09-13 19:42:09,661][BetRecords.py:22][INFO] : >>>>开始组装请求头数据<<<<
+[2023-09-13 19:42:09,663][get_token.py:35][INFO] : 登录用户Test001，获取token
+[2023-09-13 19:42:09,902][get_token.py:38][INFO] : 请求成功
+[2023-09-13 19:42:09,902][get_token.py:42][INFO] : 获取Token数据成功
+[2023-09-13 19:42:09,902][BetRecords.py:25][INFO] : >>>>请求头数据组装完成<<<<
+[2023-09-13 19:42:09,902][BetRecords.py:27][INFO] : 开始执行用例：BetRecords, 用例条件是>>>startDate error<<<, 请求params是: >>>{"currPage":1,"pageSize":10,"startDate":"","endDate":"2023-09-09 23:59:59"}<<<
+[2023-09-13 19:42:10,033][BetRecords.py:47][INFO] : 当前断言部分：预期:{'resp_code':1,'resp_msg':'Start date cannot be empty'},实际：{'resp_code': 1, 'resp_msg': 'Start date cannot be empty'}
+[2023-09-13 19:42:10,034][BetRecords.py:22][INFO] : >>>>开始组装请求头数据<<<<
+[2023-09-13 19:42:10,035][get_token.py:35][INFO] : 登录用户Test001，获取token
+[2023-09-13 19:42:10,275][get_token.py:38][INFO] : 请求成功
+[2023-09-13 19:42:10,275][get_token.py:42][INFO] : 获取Token数据成功
+[2023-09-13 19:42:10,275][BetRecords.py:25][INFO] : >>>>请求头数据组装完成<<<<
+[2023-09-13 19:42:10,276][BetRecords.py:27][INFO] : 开始执行用例：BetRecords, 用例条件是>>>endDate error<<<, 请求params是: >>>{"currPage":1,"pageSize":10,"startDate":"2023-09-09 00:00:00","endDate":""}<<<
+[2023-09-13 19:42:10,430][BetRecords.py:47][INFO] : 当前断言部分：预期:{'resp_code':1,'resp_msg':'End date cannot be empty'},实际：{'resp_code': 1, 'resp_msg': 'End date cannot be empty'}
+[2023-09-13 19:42:10,430][BetRecords.py:22][INFO] : >>>>开始组装请求头数据<<<<
+[2023-09-13 19:42:10,431][get_token.py:35][INFO] : 登录用户Test001，获取token
+[2023-09-13 19:42:10,666][get_token.py:38][INFO] : 请求成功
+[2023-09-13 19:42:10,666][get_token.py:42][INFO] : 获取Token数据成功
+[2023-09-13 19:42:10,666][BetRecords.py:25][INFO] : >>>>请求头数据组装完成<<<<
+[2023-09-13 19:42:10,667][BetRecords.py:27][INFO] : 开始执行用例：BetRecords, 用例条件是>>>all variables error<<<, 请求params是: >>>{"currPage":"","pageSize":"","startDate":"","endDate":""}<<<
+[2023-09-13 19:42:10,831][BetRecords.py:47][INFO] : 当前断言部分：预期:{'resp_code':1,'resp_msg':'Start date cannot be empty'},实际：{'resp_code': 1, 'resp_msg': 'Start date cannot be empty'}
+[2023-09-13 19:42:10,831][BetRecords.py:58][INFO] : ................执行用例>>>BetRecords<<<结束................
+[2023-09-13 19:42:10,832][BonusRecords.py:18][INFO] : ................开始执行用例>>>BonusRecords<<<................
+[2023-09-13 19:42:10,832][BonusRecords.py:22][INFO] : >>>>开始组装请求头数据<<<<
+[2023-09-13 19:42:10,833][get_token.py:35][INFO] : 登录用户Test001，获取token
+[2023-09-13 19:42:11,063][get_token.py:38][INFO] : 请求成功
+[2023-09-13 19:42:11,064][get_token.py:42][INFO] : 获取Token数据成功
+[2023-09-13 19:42:11,064][BonusRecords.py:25][INFO] : >>>>请求头数据组装完成<<<<
+[2023-09-13 19:42:11,064][BonusRecords.py:27][INFO] : 开始执行用例：BonusRecords, 用例条件是>>>Normal<<<, 请求params是: >>>{"currPage":1,"pageSize":10,"startDate":"2023-09-09 00:00:00","endDate":"2023-09-09 23:59:59"}<<<
+[2023-09-13 19:42:11,201][BonusRecords.py:38][INFO] : 当前断言部分：预期:{'datas':{'pageResult':{'currPage':1,'pageSize':10,'totalPage':1,'count':2,'data':[{'money':0.25,'takeTime':'2023-09-0917:34:31'},{'money':3.5,'takeTime':'2023-09-0910:44:21'}]},'total':3.75},'resp_code':0,'resp_msg':'succeed'},实际：{'datas': {'pageResult': {'currPage': 1, 'pageSize': 10, 'totalPage': 1, 'count': 2, 'data': [{'money': 0.25, 'takeTime': '2023-09-09 17:34:31'}, {'money': 3.5, 'takeTime': '2023-09-09 10:44:21'}]}, 'total': 3.75}, 'resp_code': 0, 'resp_msg': 'succeed'}
+[2023-09-13 19:42:11,201][BonusRecords.py:22][INFO] : >>>>开始组装请求头数据<<<<
+[2023-09-13 19:42:11,202][get_token.py:35][INFO] : 登录用户Test001，获取token
+[2023-09-13 19:42:11,432][get_token.py:38][INFO] : 请求成功
+[2023-09-13 19:42:11,432][get_token.py:42][INFO] : 获取Token数据成功
+[2023-09-13 19:42:11,433][BonusRecords.py:25][INFO] : >>>>请求头数据组装完成<<<<
+[2023-09-13 19:42:11,433][BonusRecords.py:27][INFO] : 开始执行用例：BetRecords, 用例条件是>>>currPage error<<<, 请求params是: >>>{"currPage":"","pageSize":10,"startDate":"2023-09-09 00:00:00","endDate":"2023-09-09 23:59:59"}<<<
+[2023-09-13 19:42:11,567][BonusRecords.py:43][INFO] : 当前断言部分：预期:{'resp_code':1,'resp_msg':'failed'},实际：{'resp_code': 1, 'resp_msg': 'failed'}
+[2023-09-13 19:42:11,568][BonusRecords.py:22][INFO] : >>>>开始组装请求头数据<<<<
+[2023-09-13 19:42:11,569][get_token.py:35][INFO] : 登录用户Test001，获取token
+[2023-09-13 19:42:11,802][get_token.py:38][INFO] : 请求成功
+[2023-09-13 19:42:11,802][get_token.py:42][INFO] : 获取Token数据成功
+[2023-09-13 19:42:11,803][BonusRecords.py:25][INFO] : >>>>请求头数据组装完成<<<<
+[2023-09-13 19:42:11,803][BonusRecords.py:27][INFO] : 开始执行用例：BetRecords, 用例条件是>>>pageSize error<<<, 请求params是: >>>{"currPage":1,"pageSize":"","startDate":"2023-09-09 00:00:00","endDate":"2023-09-09 23:59:59"}<<<
+[2023-09-13 19:42:11,948][BonusRecords.py:43][INFO] : 当前断言部分：预期:{'resp_code':1,'resp_msg':'failed'},实际：{'resp_code': 1, 'resp_msg': 'failed'}
+[2023-09-13 19:42:11,948][BonusRecords.py:22][INFO] : >>>>开始组装请求头数据<<<<
+[2023-09-13 19:42:11,949][get_token.py:35][INFO] : 登录用户Test001，获取token
+[2023-09-13 19:42:12,176][get_token.py:38][INFO] : 请求成功
+[2023-09-13 19:42:12,176][get_token.py:42][INFO] : 获取Token数据成功
+[2023-09-13 19:42:12,177][BonusRecords.py:25][INFO] : >>>>请求头数据组装完成<<<<
+[2023-09-13 19:42:12,177][BonusRecords.py:27][INFO] : 开始执行用例：BetRecords, 用例条件是>>>startDate error<<<, 请求params是: >>>{"currPage":1,"pageSize":10,"startDate":"","endDate":"2023-09-09 23:59:59"}<<<
+[2023-09-13 19:42:12,312][BonusRecords.py:47][INFO] : 当前断言部分：预期:{'resp_code':1,'resp_msg':'Start date cannot be empty'},实际：{'resp_code': 1, 'resp_msg': 'Start date cannot be empty'}
+[2023-09-13 19:42:12,312][BonusRecords.py:22][INFO] : >>>>开始组装请求头数据<<<<
+[2023-09-13 19:42:12,313][get_token.py:35][INFO] : 登录用户Test001，获取token
+[2023-09-13 19:42:12,555][get_token.py:38][INFO] : 请求成功
+[2023-09-13 19:42:12,556][get_token.py:42][INFO] : 获取Token数据成功
+[2023-09-13 19:42:12,556][BonusRecords.py:25][INFO] : >>>>请求头数据组装完成<<<<
+[2023-09-13 19:42:12,556][BonusRecords.py:27][INFO] : 开始执行用例：BetRecords, 用例条件是>>>endDate error<<<, 请求params是: >>>{"currPage":1,"pageSize":10,"startDate":"2023-09-09 00:00:00","endDate":""}<<<
+[2023-09-13 19:42:12,689][BonusRecords.py:47][INFO] : 当前断言部分：预期:{'resp_code':1,'resp_msg':'End date cannot be empty'},实际：{'resp_code': 1, 'resp_msg': 'End date cannot be empty'}
+[2023-09-13 19:42:12,689][BonusRecords.py:22][INFO] : >>>>开始组装请求头数据<<<<
+[2023-09-13 19:42:12,690][get_token.py:35][INFO] : 登录用户Test001，获取token
+[2023-09-13 19:42:12,920][get_token.py:38][INFO] : 请求成功
+[2023-09-13 19:42:12,921][get_token.py:42][INFO] : 获取Token数据成功
+[2023-09-13 19:42:12,921][BonusRecords.py:25][INFO] : >>>>请求头数据组装完成<<<<
+[2023-09-13 19:42:12,921][BonusRecords.py:27][INFO] : 开始执行用例：BetRecords, 用例条件是>>>all variables error<<<, 请求params是: >>>{"currPage":"","pageSize":"","startDate":"","endDate":""}<<<
+[2023-09-13 19:42:13,091][BonusRecords.py:47][INFO] : 当前断言部分：预期:{'resp_code':1,'resp_msg':'Start date cannot be empty'},实际：{'resp_code': 1, 'resp_msg': 'Start date cannot be empty'}
+[2023-09-13 19:42:13,092][BonusRecords.py:58][INFO] : ................执行用例>>>BonusRecords<<<结束................
+[2023-09-13 19:42:13,092][GetBetTop10.py:18][INFO] : ................开始执行用例>>>GetBetTop10<<<................
+[2023-09-13 19:42:13,092][GetBetTop10.py:24][INFO] : >>>>开始组装请求头数据<<<<
+[2023-09-13 19:42:13,093][get_token.py:35][INFO] : 登录用户Test001，获取token
+[2023-09-13 19:42:13,328][get_token.py:38][INFO] : 请求成功
+[2023-09-13 19:42:13,328][get_token.py:42][INFO] : 获取Token数据成功
+[2023-09-13 19:42:13,328][GetBetTop10.py:27][INFO] : >>>>请求头数据组装完成<<<<
+[2023-09-13 19:42:13,328][GetBetTop10.py:29][INFO] : 开始执行用例：GetBetTop10, 用例条件是>>>Normal<<<, 请求params是 >>>:None<<<
+[2023-09-13 19:42:13,643][GetBetTop10.py:40][INFO] : 当前断言部分：预期:{'datas':[{'sortNo':1,'username':'disha','money':300.0},{'sortNo':2,'username':'dileep','money':10.0}],'resp_code':0,'resp_msg':'succeed'},实际：{'datas': [{'sortNo': 1, 'username': 'disha', 'money': 300.0}, {'sortNo': 2, 'username': 'dileep', 'money': 10.0}], 'resp_code': 0, 'resp_msg': 'succeed'}
+[2023-09-13 19:42:13,643][GetBetTop10.py:51][INFO] : ................执行用例>>>GetBetTop10<<<结束................
+[2023-09-13 19:42:13,643][GetMoneyChangeList.py:18][INFO] : ................开始执行用例>>>GetMoneyChangeList<<<................
+[2023-09-13 19:42:13,643][GetMoneyChangeList.py:22][INFO] : >>>>开始组装请求头数据<<<<
+[2023-09-13 19:42:13,644][get_token.py:35][INFO] : 登录用户Test001，获取token
+[2023-09-13 19:42:13,877][get_token.py:38][INFO] : 请求成功
+[2023-09-13 19:42:13,877][get_token.py:42][INFO] : 获取Token数据成功
+[2023-09-13 19:42:13,877][GetMoneyChangeList.py:25][INFO] : >>>>请求头数据组装完成<<<<
+[2023-09-13 19:42:13,877][GetMoneyChangeList.py:27][INFO] : 开始执行用例：GetMoneyChangeList, 用例条件是>>>Normal<<<, 请求params是: >>>{'pageSize':10,'currPage':1,'startDate':'2023-09-09 00:00:00','endDate':'2023-09-09 23:59:59'}<<<
+[2023-09-13 19:42:14,032][GetMoneyChangeList.py:38][INFO] : 当前断言部分：预期:{'datas':{'currPage':1,'pageSize':10,'totalPage':1,'count':1,'data':[{'currency':'USD','money':10.0,'beforeMoney':122738.0,'afterMoney':122748.0,'remark':'领取洗码金额:10.00','orderType':7,'orderTypeName':'Receivewashmoney','createTime':'2023-09-0912:42:12'}]},'resp_code':0,'resp_msg':'succeed'},实际：{'datas': {'currPage': 1, 'pageSize': 10, 'totalPage': 1, 'count': 3, 'data': [{'currency': 'USD', 'money': 0.25, 'beforeMoney': 1018.0, 'afterMoney': 1018.25, 'remark': '领取洗码金额:0.25', 'orderType': 7, 'orderTypeName': 'Receive wash money', 'createTime': '2023-09-09 17:34:31'}, {'currency': 'USD', 'money': 5.0, 'beforeMoney': 1023.0, 'afterMoney': 1018.0, 'remark': '下注百家乐 玩法/金额:闲/5', 'orderType': 4, 'orderTypeName': 'betting', 'createTime': '2023-09-09 11:07:00'}, {'currency': 'USD', 'money': 3.5, 'beforeMoney': 1019.5, 'afterMoney': 1023.0, 'remark': '领取洗码金额:3.50', 'orderType': 7, 'orderTypeName': 'Receive wash money', 'createTime': '2023-09-09 10:44:21'}]}, 'resp_code': 0, 'resp_msg': 'succeed'}
+[2023-09-13 19:42:14,033][GetMoneyChangeList.py:22][INFO] : >>>>开始组装请求头数据<<<<
+[2023-09-13 19:42:14,034][get_token.py:35][INFO] : 登录用户Test001，获取token
+[2023-09-13 19:42:14,261][get_token.py:38][INFO] : 请求成功
+[2023-09-13 19:42:14,261][get_token.py:42][INFO] : 获取Token数据成功
+[2023-09-13 19:42:14,261][GetMoneyChangeList.py:25][INFO] : >>>>请求头数据组装完成<<<<
+[2023-09-13 19:42:14,261][GetMoneyChangeList.py:27][INFO] : 开始执行用例：BetRecords, 用例条件是>>>currPage error<<<, 请求params是: >>>{"currPage":"","pageSize":10,"startDate":"2023-09-09 00:00:00","endDate":"2023-09-09 23:59:59"}<<<
+[2023-09-13 19:42:14,396][GetMoneyChangeList.py:43][INFO] : 当前断言部分：预期:{'resp_code':1,'resp_msg':'failed'},实际：{'resp_code': 1, 'resp_msg': 'failed'}
+[2023-09-13 19:42:14,396][GetMoneyChangeList.py:22][INFO] : >>>>开始组装请求头数据<<<<
+[2023-09-13 19:42:14,397][get_token.py:35][INFO] : 登录用户Test001，获取token
+[2023-09-13 19:42:14,630][get_token.py:38][INFO] : 请求成功
+[2023-09-13 19:42:14,630][get_token.py:42][INFO] : 获取Token数据成功
+[2023-09-13 19:42:14,630][GetMoneyChangeList.py:25][INFO] : >>>>请求头数据组装完成<<<<
+[2023-09-13 19:42:14,630][GetMoneyChangeList.py:27][INFO] : 开始执行用例：BetRecords, 用例条件是>>>pageSize error<<<, 请求params是: >>>{"currPage":1,"pageSize":"","startDate":"2023-09-09 00:00:00","endDate":"2023-09-09 23:59:59"}<<<
+[2023-09-13 19:42:14,763][GetMoneyChangeList.py:43][INFO] : 当前断言部分：预期:{'resp_code':1,'resp_msg':'failed'},实际：{'resp_code': 1, 'resp_msg': 'failed'}
+[2023-09-13 19:42:14,763][GetMoneyChangeList.py:22][INFO] : >>>>开始组装请求头数据<<<<
+[2023-09-13 19:42:14,764][get_token.py:35][INFO] : 登录用户Test001，获取token
+[2023-09-13 19:42:14,999][get_token.py:38][INFO] : 请求成功
+[2023-09-13 19:42:15,000][get_token.py:42][INFO] : 获取Token数据成功
+[2023-09-13 19:42:15,000][GetMoneyChangeList.py:25][INFO] : >>>>请求头数据组装完成<<<<
+[2023-09-13 19:42:15,000][GetMoneyChangeList.py:27][INFO] : 开始执行用例：BetRecords, 用例条件是>>>startDate error<<<, 请求params是: >>>{"currPage":1,"pageSize":10,"startDate":"","endDate":"2023-09-09 23:59:59"}<<<
+[2023-09-13 19:42:15,131][GetMoneyChangeList.py:47][INFO] : 当前断言部分：预期:{'resp_code':1,'resp_msg':'Start date cannot be empty'},实际：{'resp_code': 1, 'resp_msg': 'Start date cannot be empty'}
+[2023-09-13 19:42:15,131][GetMoneyChangeList.py:22][INFO] : >>>>开始组装请求头数据<<<<
+[2023-09-13 19:42:15,133][get_token.py:35][INFO] : 登录用户Test001，获取token
+[2023-09-13 19:42:15,365][get_token.py:38][INFO] : 请求成功
+[2023-09-13 19:42:15,365][get_token.py:42][INFO] : 获取Token数据成功
+[2023-09-13 19:42:15,366][GetMoneyChangeList.py:25][INFO] : >>>>请求头数据组装完成<<<<
+[2023-09-13 19:42:15,366][GetMoneyChangeList.py:27][INFO] : 开始执行用例：BetRecords, 用例条件是>>>endDate error<<<, 请求params是: >>>{"currPage":1,"pageSize":10,"startDate":"2023-09-09 00:00:00","endDate":""}<<<
+[2023-09-13 19:42:15,511][GetMoneyChangeList.py:47][INFO] : 当前断言部分：预期:{'resp_code':1,'resp_msg':'End date cannot be empty'},实际：{'resp_code': 1, 'resp_msg': 'End date cannot be empty'}
+[2023-09-13 19:42:15,511][GetMoneyChangeList.py:22][INFO] : >>>>开始组装请求头数据<<<<
+[2023-09-13 19:42:15,512][get_token.py:35][INFO] : 登录用户Test001，获取token
+[2023-09-13 19:42:15,755][get_token.py:38][INFO] : 请求成功
+[2023-09-13 19:42:15,755][get_token.py:42][INFO] : 获取Token数据成功
+[2023-09-13 19:42:15,756][GetMoneyChangeList.py:25][INFO] : >>>>请求头数据组装完成<<<<
+[2023-09-13 19:42:15,756][GetMoneyChangeList.py:27][INFO] : 开始执行用例：BetRecords, 用例条件是>>>all variables error<<<, 请求params是: >>>{"currPage":"","pageSize":"","startDate":"","endDate":""}<<<
+[2023-09-13 19:42:15,893][GetMoneyChangeList.py:47][INFO] : 当前断言部分：预期:{'resp_code':1,'resp_msg':'Start date cannot be empty'},实际：{'resp_code': 1, 'resp_msg': 'Start date cannot be empty'}
+[2023-09-13 19:42:15,894][GetMoneyChangeList.py:58][INFO] : ................执行用例>>>GetMoneyChangeList<<<结束................
+[2023-09-13 19:42:15,894][GetOnlineNum.py:21][INFO] : ................开始执行用例>>>GetOnlineNum<<<................
+[2023-09-13 19:42:15,894][GetOnlineNum.py:26][INFO] : >>>>开始组装请求头数据<<<<
+[2023-09-13 19:42:15,895][get_token.py:35][INFO] : 登录用户Test001，获取token
+[2023-09-13 19:42:16,164][get_token.py:38][INFO] : 请求成功
+[2023-09-13 19:42:16,164][get_token.py:42][INFO] : 获取Token数据成功
+[2023-09-13 19:42:16,165][GetOnlineNum.py:29][INFO] : >>>>请求头数据组装完成<<<<
+[2023-09-13 19:42:16,165][GetOnlineNum.py:31][INFO] : 开始执行用例：GetOnlineNum, 用例条件是>>>Normal<<<, 请求params是 >>>:None<<<
+[2023-09-13 19:42:16,299][GetOnlineNum.py:42][INFO] : 当前断言部分：预期:{'datas':1018,'resp_code':0,'resp_msg':'succeed'},实际：{'datas': 1009, 'resp_code': 0, 'resp_msg': 'succeed'}
+[2023-09-13 19:42:16,300][GetOnlineNum.py:59][INFO] : ................执行用例>>>GetOnlineNum<<<结束................
+[2023-09-13 19:42:16,300][GetRichTop10.py:18][INFO] : ................开始执行用例>>>GetRichTop10<<<................
+[2023-09-13 19:42:16,300][GetRichTop10.py:24][INFO] : >>>>开始组装请求头数据<<<<
+[2023-09-13 19:42:16,301][get_token.py:35][INFO] : 登录用户Test001，获取token
+[2023-09-13 19:42:16,530][get_token.py:38][INFO] : 请求成功
+[2023-09-13 19:42:16,530][get_token.py:42][INFO] : 获取Token数据成功
+[2023-09-13 19:42:16,531][GetRichTop10.py:27][INFO] : >>>>请求头数据组装完成<<<<
+[2023-09-13 19:42:16,531][GetRichTop10.py:29][INFO] : 开始执行用例：GetRichTop10, 用例条件是>>>Normal<<<, 请求params是 >>>:None<<<
+[2023-09-13 19:42:16,697][GetRichTop10.py:40][INFO] : 当前断言部分：预期:{'datas':[{'sortNo':1,'username':'Test002','money':122748.0},{'sortNo':2,'username':'year_cny1','money':25000.0},{'sortNo':3,'username':'year05','money':17584.13},{'sortNo':4,'username':'year06','money':15489.31},{'sortNo':5,'username':'year_cny','money':12558.44},{'sortNo':6,'username':'oscar01','money':11000.0},{'sortNo':7,'username':'mike01','money':10287.75},{'sortNo':8,'username':'saba','money':10050.0},{'sortNo':9,'username':'year02','money':10004.5},{'sortNo':10,'username':'chezaiusd','money':10001.0}],'resp_code':0,'resp_msg':'succeed'},实际：{'datas': [{'sortNo': 1, 'username': 'Test002', 'money': 122748.0}, {'sortNo': 2, 'username': 'year_cny1', 'money': 25000.0}, {'sortNo': 3, 'username': 'year05', 'money': 17584.13}, {'sortNo': 4, 'username': 'year06', 'money': 15549.31}, {'sortNo': 5, 'username': 'year_cny', 'money': 12558.44}, {'sortNo': 6, 'username': 'oscar01', 'money': 11000.0}, {'sortNo': 7, 'username': 'disha', 'money': 10443.75}, {'sortNo': 8, 'username': 'mike01', 'money': 10287.75}, {'sortNo': 9, 'username': 'saba', 'money': 10050.0}, {'sortNo': 10, 'username': 'year02', 'money': 10004.5}], 'resp_code': 0, 'resp_msg': 'succeed'}
+[2023-09-13 19:42:16,697][GetRichTop10.py:51][INFO] : ................执行用例>>>GetRichTop10<<<结束................
+[2023-09-13 19:42:16,697][GetUserInfo.py:18][INFO] : ................开始执行用例>>>GetUserInfo<<<................
+[2023-09-13 19:42:16,697][GetUserInfo.py:24][INFO] : >>>>开始组装请求头数据<<<<
+[2023-09-13 19:42:16,698][get_token.py:35][INFO] : 登录用户Test001，获取token
+[2023-09-13 19:42:16,929][get_token.py:38][INFO] : 请求成功
+[2023-09-13 19:42:16,929][get_token.py:42][INFO] : 获取Token数据成功
+[2023-09-13 19:42:16,929][GetUserInfo.py:27][INFO] : >>>>请求头数据组装完成<<<<
+[2023-09-13 19:42:16,930][GetUserInfo.py:29][INFO] : 开始执行用例：GetUserInfo, 用例条件是>>>Normal<<<, 请求params是 >>>:None<<<
+[2023-09-13 19:42:17,064][GetUserInfo.py:40][INFO] : 当前断言部分：预期:{'datas':{'userId':894,'username':'Test001','playerType':1,'isTourists':'false','currency':'USD','symbol':'$','userMoney':1014.25,'remainBet':1931.0,'washCodeMoney':0.2,'chips':'1,2,5,10,100','customerSwitch':'false'},'resp_code':0,'resp_msg':'succeed'},实际：{'datas': {'userId': 894, 'username': 'Test001', 'playerType': 1, 'isTourists': False, 'currency': 'USD', 'symbol': '$', 'userMoney': 1014.25, 'remainBet': 1931.0, 'washCodeMoney': 0.2, 'chips': '1,2,5,10,100', 'customerSwitch': False}, 'resp_code': 0, 'resp_msg': 'succeed'}
+[2023-09-13 19:42:17,065][GetUserInfo.py:51][INFO] : ................执行用例>>>GetUserInfo<<<结束................
+[2023-09-13 19:42:17,065][GetWinTop10.py:18][INFO] : ................开始执行用例>>>GetWinTop10<<<................
+[2023-09-13 19:42:17,065][GetWinTop10.py:24][INFO] : >>>>开始组装请求头数据<<<<
+[2023-09-13 19:42:17,066][get_token.py:35][INFO] : 登录用户Test001，获取token
+[2023-09-13 19:42:17,311][get_token.py:38][INFO] : 请求成功
+[2023-09-13 19:42:17,311][get_token.py:42][INFO] : 获取Token数据成功
+[2023-09-13 19:42:17,311][GetWinTop10.py:27][INFO] : >>>>请求头数据组装完成<<<<
+[2023-09-13 19:42:17,311][GetWinTop10.py:29][INFO] : 开始执行用例：GetWinTop10, 用例条件是>>>Normal<<<, 请求params是 >>>:None<<<
+[2023-09-13 19:42:17,624][GetWinTop10.py:40][INFO] : 当前断言部分：预期:{'datas':[{'sortNo':1,'username':'disha','money':1100.0},{'sortNo':2,'username':'dileep','money':-10.0}],'resp_code':0,'resp_msg':'succeed'},实际：{'datas': [{'sortNo': 1, 'username': 'disha', 'money': 1100.0}, {'sortNo': 2, 'username': 'dileep', 'money': -10.0}], 'resp_code': 0, 'resp_msg': 'succeed'}
+[2023-09-13 19:42:17,625][GetWinTop10.py:51][INFO] : ................执行用例>>>GetWinTop10<<<结束................
+[2023-09-13 19:42:17,625][TorisitLogin.py:21][INFO] : ................开始执行用例>>>TouristsLogin<<<................
+[2023-09-13 19:42:17,625][TorisitLogin.py:26][INFO] : >>>>开始组装请求头数据<<<<
+[2023-09-13 19:42:17,626][get_token.py:35][INFO] : 登录用户Test001，获取token
+[2023-09-13 19:42:17,860][get_token.py:38][INFO] : 请求成功
+[2023-09-13 19:42:17,861][get_token.py:42][INFO] : 获取Token数据成功
+[2023-09-13 19:42:17,861][TorisitLogin.py:29][INFO] : >>>>请求头数据组装完成<<<<
+[2023-09-13 19:42:17,861][TorisitLogin.py:31][INFO] : 开始执行用例：GetWinTop10, 用例条件是>>>Normal<<<, 请求params是 >>>:None<<<
+[2023-09-13 19:42:18,202][TorisitLogin.py:42][INFO] : 当前断言部分：预期:{'datas':{'accessToken':'3521ffb7-c5a4-4783-99bb-b74c9d22f359'},'resp_code':0,'resp_msg':'succeed'},实际：{'datas': {'accessToken': '5c6d6012-9d8d-447f-b59c-31c284c53d6f'}, 'resp_code': 0, 'resp_msg': 'succeed'}
+[2023-09-13 19:42:18,203][TorisitLogin.py:54][INFO] : ................执行用例>>>TouristsLogin<<<结束................
+[2023-09-13 19:42:18,203][UserLogin.py:16][INFO] : ................开始执行用例UserLogin................
+[2023-09-13 19:42:18,203][UserLogin.py:23][INFO] : 当前执行用例：UserLogin, 请求url:/game-server/game/api/v1/common/login
+[2023-09-13 19:42:18,546][UserLogin.py:38][INFO] : 当前断言部分：预期:{"datas":{"accessToken": ""},"resp_code": 0,"resp_msg":"succeed"},实际：{'datas': {'accessToken': '2c0d2e89-c49f-4e45-bf5f-8b22c5cf179a'}, 'resp_code': 0, 'resp_msg': 'succeed'}
+[2023-09-13 19:42:18,547][UserLogin.py:72][INFO] : ................执行用例UserLogin结束................
+[2023-09-13 19:42:18,547][UserLogin.py:16][INFO] : ................开始执行用例UserLogin................
+[2023-09-13 19:42:18,547][UserLogin.py:23][INFO] : 当前执行用例：UserLogin, 请求url:/game-server/game/api/v1/common/login
+[2023-09-13 19:42:18,732][UserLogin.py:44][INFO] : 当前断言部分：预期:{'resp_code':1,'resp_msg':'The password is wrong, you can try 2 more times'},实际：{'resp_code': 1, 'resp_msg': 'The password is wrong, you can try 2 more times'}
+[2023-09-13 19:42:18,732][UserLogin.py:72][INFO] : ................执行用例UserLogin结束................
+[2023-09-13 19:42:18,732][UserLogin.py:16][INFO] : ................开始执行用例UserLogin................
+[2023-09-13 19:42:18,733][UserLogin.py:23][INFO] : 当前执行用例：UserLogin, 请求url:/game-server/game/api/v1/common/login
+[2023-09-13 19:42:18,862][UserLogin.py:50][INFO] : 当前断言部分：预期:{'resp_code':1,'resp_msg':'wrong user name or password'},实际：{'resp_code': 1, 'resp_msg': 'wrong user name or password'}
+[2023-09-13 19:42:18,863][UserLogin.py:72][INFO] : ................执行用例UserLogin结束................
+[2023-09-13 19:42:18,863][UserLogin.py:16][INFO] : ................开始执行用例UserLogin................
+[2023-09-13 19:42:18,863][UserLogin.py:23][INFO] : 当前执行用例：UserLogin, 请求url:/game-server/game/api/v1/common/login
+[2023-09-13 19:42:18,988][UserLogin.py:56][INFO] : 当前断言部分：预期:{'resp_code':1,'resp_msg':'Account cannot be empty'},实际：{'resp_code': 1, 'resp_msg': 'Account cannot be empty'}
+[2023-09-13 19:42:18,988][UserLogin.py:72][INFO] : ................执行用例UserLogin结束................
+[2023-09-13 19:42:18,988][UserLogin.py:16][INFO] : ................开始执行用例UserLogin................
+[2023-09-13 19:42:18,988][UserLogin.py:23][INFO] : 当前执行用例：UserLogin, 请求url:/game-server/game/api/v1/common/login
+[2023-09-13 19:42:19,122][UserLogin.py:62][INFO] : 当前断言部分：预期:{'resp_code':1,'resp_msg':'password cannot be blank'},实际：{'resp_code': 1, 'resp_msg': 'password can not be blank'}
+[2023-09-13 19:42:19,122][UserLogin.py:72][INFO] : ................执行用例UserLogin结束................
+[2023-09-13 19:42:19,123][UserLogin.py:16][INFO] : ................开始执行用例UserLogin................
+[2023-09-13 19:42:19,123][UserLogin.py:23][INFO] : 当前执行用例：UserLogin, 请求url:/game-server/game/api/v1/common/login
+[2023-09-13 19:42:19,252][UserLogin.py:50][INFO] : 当前断言部分：预期:{'resp_code':1,'resp_msg':'wrong user name or password'},实际：{'resp_code': 1, 'resp_msg': 'wrong user name or password'}
+[2023-09-13 19:42:19,252][UserLogin.py:72][INFO] : ................执行用例UserLogin结束................
+[2023-09-13 19:42:19,252][UserLogout.py:18][INFO] : ................开始执行用例>>>UserLogout<<<................
+[2023-09-13 19:42:19,253][UserLogout.py:24][INFO] : >>>>开始组装请求头数据<<<<
+[2023-09-13 19:42:19,254][get_token.py:35][INFO] : 登录用户Test001，获取token
+[2023-09-13 19:42:19,495][get_token.py:38][INFO] : 请求成功
+[2023-09-13 19:42:19,495][get_token.py:42][INFO] : 获取Token数据成功
+[2023-09-13 19:42:19,495][UserLogout.py:27][INFO] : >>>>请求头数据组装完成<<<<
+[2023-09-13 19:42:19,495][UserLogout.py:29][INFO] : 开始执行用例：UserLogout, 用例条件是>>>Normal<<<, 请求params是 >>>:None<<<
+[2023-09-13 19:42:19,653][UserLogout.py:40][INFO] : 当前断言部分：预期:{'resp_code':0,'resp_msg':'succeed'},实际：{'resp_code': 0, 'resp_msg': 'succeed'}
+[2023-09-13 19:42:19,653][UserLogout.py:51][INFO] : ................执行用例>>>UserLogout<<<结束................
+[2023-09-13 19:42:19,654][get_token.py:35][INFO] : 登录用户Test001，获取token
+[2023-09-13 19:42:19,879][get_token.py:38][INFO] : 请求成功
+[2023-09-13 19:42:19,879][get_token.py:42][INFO] : 获取Token数据成功
+[2023-09-13 19:42:19,879][GetBannerList.py:23][INFO] : 当前执行用例：GetPic, 请求url:/game-server/game/api/v1/lobby/getBannerList
+[2023-09-13 19:42:20,025][GetBannerList.py:36][INFO] : 当前断言部分：预期:{"datas":[{"web":"/kkvideo/en_banner_01.png","sort": 0}],"resp_code":0,"resp_msg":"succeed"},实际：{'datas': [{'web': '/kkvideo/en_banner_01.png', 'sort': 0}], 'resp_code': 0, 'resp_msg': 'succeed'}
+[2023-09-13 19:53:17,199][BetDetail.py:21][INFO] : ................开始执行用例>>>BetDetail<<<................
+[2023-09-13 19:53:17,199][BetDetail.py:26][INFO] : >>>>开始组装请求头数据<<<<
+[2023-09-13 19:53:17,200][get_token.py:35][INFO] : 登录用户Test001，获取token
+[2023-09-13 19:53:17,711][get_token.py:38][INFO] : 请求成功
+[2023-09-13 19:53:17,711][get_token.py:42][INFO] : 获取Token数据成功
+[2023-09-13 19:53:17,711][BetDetail.py:29][INFO] : >>>>请求头数据组装完成<<<<
+[2023-09-13 19:53:17,711][BetDetail.py:31][INFO] : 开始执行用例：BetDetail, 用例条件是>>>Normal<<<, 请求params是 >>>:{'bootNo':'230911-12','gameId':101,'roundNo':'MB-30','tableNo':939}<<<
+[2023-09-13 19:53:17,866][BetDetail.py:47][INFO] : 当前断言部分：预期:{"datas":[{"playName":"P","calcTime":"2023-09-11 17:55:00","betMoney":1.00,"betValidMoney":1.00,"winLossMoney":-1.00}],"resp_code":0,"resp_msg":"succeed"},实际：{'datas': [{'playName': 'P', 'calcTime': '2023-09-11 17:55:00', 'betMoney': 1.0, 'betValidMoney': 1.0, 'winLossMoney': -1.0}], 'resp_code': 0, 'resp_msg': 'succeed'}
+[2023-09-13 19:53:17,867][BetDetail.py:26][INFO] : >>>>开始组装请求头数据<<<<
+[2023-09-13 19:53:17,868][get_token.py:35][INFO] : 登录用户Test001，获取token
+[2023-09-13 19:53:18,106][get_token.py:38][INFO] : 请求成功
+[2023-09-13 19:53:18,106][get_token.py:42][INFO] : 获取Token数据成功
+[2023-09-13 19:53:18,106][BetDetail.py:29][INFO] : >>>>请求头数据组装完成<<<<
+[2023-09-13 19:53:18,106][BetDetail.py:31][INFO] : 开始执行用例：BetDetail, 用例条件是>>>bootNo error<<<, 请求params是 >>>:{'bootNo':'230911-00','gameId':101,'roundNo':'MB-30','tableNo':939}<<<
+[2023-09-13 19:53:18,278][BetDetail.py:47][INFO] : 当前断言部分：预期:{"resp_code":0,"resp_msg":"succeed"},实际：{'resp_code': 0, 'resp_msg': 'succeed'}
+[2023-09-13 19:53:18,278][BetDetail.py:26][INFO] : >>>>开始组装请求头数据<<<<
+[2023-09-13 19:53:18,279][get_token.py:35][INFO] : 登录用户Test001，获取token
+[2023-09-13 19:53:18,509][get_token.py:38][INFO] : 请求成功
+[2023-09-13 19:53:18,510][get_token.py:42][INFO] : 获取Token数据成功
+[2023-09-13 19:53:18,510][BetDetail.py:29][INFO] : >>>>请求头数据组装完成<<<<
+[2023-09-13 19:53:18,510][BetDetail.py:31][INFO] : 开始执行用例：BetDetail, 用例条件是>>>gameId error<<<, 请求params是 >>>:{'bootNo':'230911-12','gameId':100,'roundNo':'MB-30','tableNo':939}<<<
+[2023-09-13 19:53:18,648][BetDetail.py:47][INFO] : 当前断言部分：预期:{"resp_code":0,"resp_msg":"succeed"},实际：{'resp_code': 0, 'resp_msg': 'succeed'}
+[2023-09-13 19:53:18,648][BetDetail.py:26][INFO] : >>>>开始组装请求头数据<<<<
+[2023-09-13 19:53:18,650][get_token.py:35][INFO] : 登录用户Test001，获取token
+[2023-09-13 19:53:18,888][get_token.py:38][INFO] : 请求成功
+[2023-09-13 19:53:18,888][get_token.py:42][INFO] : 获取Token数据成功
+[2023-09-13 19:53:18,889][BetDetail.py:29][INFO] : >>>>请求头数据组装完成<<<<
+[2023-09-13 19:53:18,889][BetDetail.py:31][INFO] : 开始执行用例：BetDetail, 用例条件是>>>tableNo error<<<, 请求params是 >>>:{'bootNo':'230911-12','gameId':101,'roundNo':'MB-30','tableNo':930}<<<
+[2023-09-13 19:53:19,060][BetDetail.py:47][INFO] : 当前断言部分：预期:{"resp_code":0,"resp_msg":"succeed"},实际：{'resp_code': 0, 'resp_msg': 'succeed'}
+[2023-09-13 19:53:19,061][BetDetail.py:26][INFO] : >>>>开始组装请求头数据<<<<
+[2023-09-13 19:53:19,062][get_token.py:35][INFO] : 登录用户Test001，获取token
+[2023-09-13 19:53:19,305][get_token.py:38][INFO] : 请求成功
+[2023-09-13 19:53:19,305][get_token.py:42][INFO] : 获取Token数据成功
+[2023-09-13 19:53:19,306][BetDetail.py:29][INFO] : >>>>请求头数据组装完成<<<<
+[2023-09-13 19:53:19,306][BetDetail.py:31][INFO] : 开始执行用例：BetDetail, 用例条件是>>>roundNo error<<<, 请求params是 >>>:{'bootNo':'230911-12','gameId':101,'roundNo':'MB-33','tableNo':939}<<<
+[2023-09-13 19:53:19,444][BetDetail.py:47][INFO] : 当前断言部分：预期:{"resp_code":0,"resp_msg":"succeed"},实际：{'resp_code': 0, 'resp_msg': 'succeed'}
+[2023-09-13 19:53:19,445][BetDetail.py:59][INFO] : ................执行用例>>>BetDetail<<<结束................
+[2023-09-13 19:53:19,445][BetRecords.py:18][INFO] : ................开始执行用例>>>BetRecords<<<................
+[2023-09-13 19:53:19,445][BetRecords.py:22][INFO] : >>>>开始组装请求头数据<<<<
+[2023-09-13 19:53:19,446][get_token.py:35][INFO] : 登录用户Test001，获取token
+[2023-09-13 19:53:19,690][get_token.py:38][INFO] : 请求成功
+[2023-09-13 19:53:19,690][get_token.py:42][INFO] : 获取Token数据成功
+[2023-09-13 19:53:19,691][BetRecords.py:25][INFO] : >>>>请求头数据组装完成<<<<
+[2023-09-13 19:53:19,691][BetRecords.py:27][INFO] : 开始执行用例：BetRecords, 用例条件是>>>Normal<<<, 请求params是: >>>{"currPage":1,"pageSize":10,"startDate":"2023-09-09 00:00:00","endDate":"2023-09-09 23:59:59"}<<<
+[2023-09-13 19:53:19,828][BetRecords.py:38][INFO] : 当前断言部分：预期:{'datas':{'pageResult':{'currPage':1,'pageSize':10,'totalPage':1,'count':1,'data':[{'gameId':101,'gameName':'baccarat','tableNo':'939','bootNo':'230909-01','roundNo':'MB-22','calcTime':'2023-09-0911:07:32','betMoney':5.0,'betValidMoney':5.0,'winLossMoney':-5.0}]},'subBetTotal':{'betMoney':5.0,'validBetMoney':5.0,'winLossMoney':-5.0},'betTotal':{'betMoney':5.0,'winLossMoney':-5.0}},'resp_code':0,'resp_msg':'succeed'},实际：{'datas': {'pageResult': {'currPage': 1, 'pageSize': 10, 'totalPage': 1, 'count': 1, 'data': [{'gameId': 101, 'gameName': 'baccarat', 'tableNo': '939', 'bootNo': '230909-01', 'roundNo': 'MB-22', 'calcTime': '2023-09-09 11:07:32', 'betMoney': 5.0, 'betValidMoney': 5.0, 'winLossMoney': -5.0}]}, 'subBetTotal': {'betMoney': 5.0, 'validBetMoney': 5.0, 'winLossMoney': -5.0}, 'betTotal': {'betMoney': 5.0, 'winLossMoney': -5.0}}, 'resp_code': 0, 'resp_msg': 'succeed'}
+[2023-09-13 19:53:19,829][BetRecords.py:22][INFO] : >>>>开始组装请求头数据<<<<
+[2023-09-13 19:53:19,830][get_token.py:35][INFO] : 登录用户Test001，获取token
+[2023-09-13 19:53:20,079][get_token.py:38][INFO] : 请求成功
+[2023-09-13 19:53:20,080][get_token.py:42][INFO] : 获取Token数据成功
+[2023-09-13 19:53:20,080][BetRecords.py:25][INFO] : >>>>请求头数据组装完成<<<<
+[2023-09-13 19:53:20,080][BetRecords.py:27][INFO] : 开始执行用例：BetRecords, 用例条件是>>>currPage error<<<, 请求params是: >>>{"currPage":"","pageSize":10,"startDate":"2023-09-09 00:00:00","endDate":"2023-09-09 23:59:59"}<<<
+[2023-09-13 19:53:20,249][BetRecords.py:43][INFO] : 当前断言部分：预期:{'resp_code':1,'resp_msg':'failed'},实际：{'resp_code': 1, 'resp_msg': 'failed'}
+[2023-09-13 19:53:20,249][BetRecords.py:22][INFO] : >>>>开始组装请求头数据<<<<
+[2023-09-13 19:53:20,250][get_token.py:35][INFO] : 登录用户Test001，获取token
+[2023-09-13 19:53:20,492][get_token.py:38][INFO] : 请求成功
+[2023-09-13 19:53:20,493][get_token.py:42][INFO] : 获取Token数据成功
+[2023-09-13 19:53:20,493][BetRecords.py:25][INFO] : >>>>请求头数据组装完成<<<<
+[2023-09-13 19:53:20,493][BetRecords.py:27][INFO] : 开始执行用例：BetRecords, 用例条件是>>>pageSize error<<<, 请求params是: >>>{"currPage":1,"pageSize":"","startDate":"2023-09-09 00:00:00","endDate":"2023-09-09 23:59:59"}<<<
+[2023-09-13 19:53:20,648][BetRecords.py:43][INFO] : 当前断言部分：预期:{'resp_code':1,'resp_msg':'failed'},实际：{'resp_code': 1, 'resp_msg': 'failed'}
+[2023-09-13 19:53:20,648][BetRecords.py:22][INFO] : >>>>开始组装请求头数据<<<<
+[2023-09-13 19:53:20,649][get_token.py:35][INFO] : 登录用户Test001，获取token
+[2023-09-13 19:53:20,892][get_token.py:38][INFO] : 请求成功
+[2023-09-13 19:53:20,892][get_token.py:42][INFO] : 获取Token数据成功
+[2023-09-13 19:53:20,893][BetRecords.py:25][INFO] : >>>>请求头数据组装完成<<<<
+[2023-09-13 19:53:20,893][BetRecords.py:27][INFO] : 开始执行用例：BetRecords, 用例条件是>>>startDate error<<<, 请求params是: >>>{"currPage":1,"pageSize":10,"startDate":"","endDate":"2023-09-09 23:59:59"}<<<
+[2023-09-13 19:53:21,026][BetRecords.py:47][INFO] : 当前断言部分：预期:{'resp_code':1,'resp_msg':'Start date cannot be empty'},实际：{'resp_code': 1, 'resp_msg': 'Start date cannot be empty'}
+[2023-09-13 19:53:21,027][BetRecords.py:22][INFO] : >>>>开始组装请求头数据<<<<
+[2023-09-13 19:53:21,028][get_token.py:35][INFO] : 登录用户Test001，获取token
+[2023-09-13 19:53:21,271][get_token.py:38][INFO] : 请求成功
+[2023-09-13 19:53:21,271][get_token.py:42][INFO] : 获取Token数据成功
+[2023-09-13 19:53:21,271][BetRecords.py:25][INFO] : >>>>请求头数据组装完成<<<<
+[2023-09-13 19:53:21,271][BetRecords.py:27][INFO] : 开始执行用例：BetRecords, 用例条件是>>>endDate error<<<, 请求params是: >>>{"currPage":1,"pageSize":10,"startDate":"2023-09-09 00:00:00","endDate":""}<<<
+[2023-09-13 19:53:21,411][BetRecords.py:47][INFO] : 当前断言部分：预期:{'resp_code':1,'resp_msg':'End date cannot be empty'},实际：{'resp_code': 1, 'resp_msg': 'End date cannot be empty'}
+[2023-09-13 19:53:21,411][BetRecords.py:22][INFO] : >>>>开始组装请求头数据<<<<
+[2023-09-13 19:53:21,412][get_token.py:35][INFO] : 登录用户Test001，获取token
+[2023-09-13 19:53:21,647][get_token.py:38][INFO] : 请求成功
+[2023-09-13 19:53:21,647][get_token.py:42][INFO] : 获取Token数据成功
+[2023-09-13 19:53:21,647][BetRecords.py:25][INFO] : >>>>请求头数据组装完成<<<<
+[2023-09-13 19:53:21,648][BetRecords.py:27][INFO] : 开始执行用例：BetRecords, 用例条件是>>>all variables error<<<, 请求params是: >>>{"currPage":"","pageSize":"","startDate":"","endDate":""}<<<
+[2023-09-13 19:53:21,792][BetRecords.py:47][INFO] : 当前断言部分：预期:{'resp_code':1,'resp_msg':'Start date cannot be empty'},实际：{'resp_code': 1, 'resp_msg': 'Start date cannot be empty'}
+[2023-09-13 19:53:21,792][BetRecords.py:58][INFO] : ................执行用例>>>BetRecords<<<结束................
+[2023-09-13 19:53:21,792][BonusRecords.py:18][INFO] : ................开始执行用例>>>BonusRecords<<<................
+[2023-09-13 19:53:21,792][BonusRecords.py:22][INFO] : >>>>开始组装请求头数据<<<<
+[2023-09-13 19:53:21,793][get_token.py:35][INFO] : 登录用户Test001，获取token
+[2023-09-13 19:53:22,024][get_token.py:38][INFO] : 请求成功
+[2023-09-13 19:53:22,024][get_token.py:42][INFO] : 获取Token数据成功
+[2023-09-13 19:53:22,025][BonusRecords.py:25][INFO] : >>>>请求头数据组装完成<<<<
+[2023-09-13 19:53:22,025][BonusRecords.py:27][INFO] : 开始执行用例：BonusRecords, 用例条件是>>>Normal<<<, 请求params是: >>>{"currPage":1,"pageSize":10,"startDate":"2023-09-09 00:00:00","endDate":"2023-09-09 23:59:59"}<<<
+[2023-09-13 19:53:22,170][BonusRecords.py:38][INFO] : 当前断言部分：预期:{'datas':{'pageResult':{'currPage':1,'pageSize':10,'totalPage':1,'count':2,'data':[{'money':0.25,'takeTime':'2023-09-0917:34:31'},{'money':3.5,'takeTime':'2023-09-0910:44:21'}]},'total':3.75},'resp_code':0,'resp_msg':'succeed'},实际：{'datas': {'pageResult': {'currPage': 1, 'pageSize': 10, 'totalPage': 1, 'count': 2, 'data': [{'money': 0.25, 'takeTime': '2023-09-09 17:34:31'}, {'money': 3.5, 'takeTime': '2023-09-09 10:44:21'}]}, 'total': 3.75}, 'resp_code': 0, 'resp_msg': 'succeed'}
+[2023-09-13 19:53:22,170][BonusRecords.py:22][INFO] : >>>>开始组装请求头数据<<<<
+[2023-09-13 19:53:22,171][get_token.py:35][INFO] : 登录用户Test001，获取token
+[2023-09-13 19:53:22,410][get_token.py:38][INFO] : 请求成功
+[2023-09-13 19:53:22,411][get_token.py:42][INFO] : 获取Token数据成功
+[2023-09-13 19:53:22,411][BonusRecords.py:25][INFO] : >>>>请求头数据组装完成<<<<
+[2023-09-13 19:53:22,411][BonusRecords.py:27][INFO] : 开始执行用例：BetRecords, 用例条件是>>>currPage error<<<, 请求params是: >>>{"currPage":"","pageSize":10,"startDate":"2023-09-09 00:00:00","endDate":"2023-09-09 23:59:59"}<<<
+[2023-09-13 19:53:22,547][BonusRecords.py:43][INFO] : 当前断言部分：预期:{'resp_code':1,'resp_msg':'failed'},实际：{'resp_code': 1, 'resp_msg': 'failed'}
+[2023-09-13 19:53:22,547][BonusRecords.py:22][INFO] : >>>>开始组装请求头数据<<<<
+[2023-09-13 19:53:22,548][get_token.py:35][INFO] : 登录用户Test001，获取token
+[2023-09-13 19:53:22,784][get_token.py:38][INFO] : 请求成功
+[2023-09-13 19:53:22,784][get_token.py:42][INFO] : 获取Token数据成功
+[2023-09-13 19:53:22,784][BonusRecords.py:25][INFO] : >>>>请求头数据组装完成<<<<
+[2023-09-13 19:53:22,784][BonusRecords.py:27][INFO] : 开始执行用例：BetRecords, 用例条件是>>>pageSize error<<<, 请求params是: >>>{"currPage":1,"pageSize":"","startDate":"2023-09-09 00:00:00","endDate":"2023-09-09 23:59:59"}<<<
+[2023-09-13 19:53:22,922][BonusRecords.py:43][INFO] : 当前断言部分：预期:{'resp_code':1,'resp_msg':'failed'},实际：{'resp_code': 1, 'resp_msg': 'failed'}
+[2023-09-13 19:53:22,922][BonusRecords.py:22][INFO] : >>>>开始组装请求头数据<<<<
+[2023-09-13 19:53:22,923][get_token.py:35][INFO] : 登录用户Test001，获取token
+[2023-09-13 19:53:23,157][get_token.py:38][INFO] : 请求成功
+[2023-09-13 19:53:23,157][get_token.py:42][INFO] : 获取Token数据成功
+[2023-09-13 19:53:23,157][BonusRecords.py:25][INFO] : >>>>请求头数据组装完成<<<<
+[2023-09-13 19:53:23,157][BonusRecords.py:27][INFO] : 开始执行用例：BetRecords, 用例条件是>>>startDate error<<<, 请求params是: >>>{"currPage":1,"pageSize":10,"startDate":"","endDate":"2023-09-09 23:59:59"}<<<
+[2023-09-13 19:53:23,294][BonusRecords.py:47][INFO] : 当前断言部分：预期:{'resp_code':1,'resp_msg':'Start date cannot be empty'},实际：{'resp_code': 1, 'resp_msg': 'Start date cannot be empty'}
+[2023-09-13 19:53:23,294][BonusRecords.py:22][INFO] : >>>>开始组装请求头数据<<<<
+[2023-09-13 19:53:23,295][get_token.py:35][INFO] : 登录用户Test001，获取token
+[2023-09-13 19:53:23,544][get_token.py:38][INFO] : 请求成功
+[2023-09-13 19:53:23,544][get_token.py:42][INFO] : 获取Token数据成功
+[2023-09-13 19:53:23,544][BonusRecords.py:25][INFO] : >>>>请求头数据组装完成<<<<
+[2023-09-13 19:53:23,545][BonusRecords.py:27][INFO] : 开始执行用例：BetRecords, 用例条件是>>>endDate error<<<, 请求params是: >>>{"currPage":1,"pageSize":10,"startDate":"2023-09-09 00:00:00","endDate":""}<<<
+[2023-09-13 19:53:23,681][BonusRecords.py:47][INFO] : 当前断言部分：预期:{'resp_code':1,'resp_msg':'End date cannot be empty'},实际：{'resp_code': 1, 'resp_msg': 'End date cannot be empty'}
+[2023-09-13 19:53:23,681][BonusRecords.py:22][INFO] : >>>>开始组装请求头数据<<<<
+[2023-09-13 19:53:23,683][get_token.py:35][INFO] : 登录用户Test001，获取token
+[2023-09-13 19:53:23,971][get_token.py:38][INFO] : 请求成功
+[2023-09-13 19:53:23,972][get_token.py:42][INFO] : 获取Token数据成功
+[2023-09-13 19:53:23,972][BonusRecords.py:25][INFO] : >>>>请求头数据组装完成<<<<
+[2023-09-13 19:53:23,972][BonusRecords.py:27][INFO] : 开始执行用例：BetRecords, 用例条件是>>>all variables error<<<, 请求params是: >>>{"currPage":"","pageSize":"","startDate":"","endDate":""}<<<
+[2023-09-13 19:53:24,147][BonusRecords.py:47][INFO] : 当前断言部分：预期:{'resp_code':1,'resp_msg':'Start date cannot be empty'},实际：{'resp_code': 1, 'resp_msg': 'Start date cannot be empty'}
+[2023-09-13 19:53:24,148][BonusRecords.py:58][INFO] : ................执行用例>>>BonusRecords<<<结束................
+[2023-09-13 19:53:24,148][GetBetTop10.py:18][INFO] : ................开始执行用例>>>GetBetTop10<<<................
+[2023-09-13 19:53:24,148][GetBetTop10.py:24][INFO] : >>>>开始组装请求头数据<<<<
+[2023-09-13 19:53:24,149][get_token.py:35][INFO] : 登录用户Test001，获取token
+[2023-09-13 19:53:24,388][get_token.py:38][INFO] : 请求成功
+[2023-09-13 19:53:24,390][get_token.py:42][INFO] : 获取Token数据成功
+[2023-09-13 19:53:24,390][GetBetTop10.py:27][INFO] : >>>>请求头数据组装完成<<<<
+[2023-09-13 19:53:24,390][GetBetTop10.py:29][INFO] : 开始执行用例：GetBetTop10, 用例条件是>>>Normal<<<, 请求params是 >>>:None<<<
+[2023-09-13 19:53:24,708][GetBetTop10.py:40][INFO] : 当前断言部分：预期:{'datas':[{'sortNo':1,'username':'disha','money':300.0},{'sortNo':2,'username':'dileep','money':10.0}],'resp_code':0,'resp_msg':'succeed'},实际：{'datas': [{'sortNo': 1, 'username': 'disha', 'money': 300.0}, {'sortNo': 2, 'username': 'dileep', 'money': 10.0}], 'resp_code': 0, 'resp_msg': 'succeed'}
+[2023-09-13 19:53:24,708][GetBetTop10.py:51][INFO] : ................执行用例>>>GetBetTop10<<<结束................
+[2023-09-13 19:53:24,709][GetMoneyChangeList.py:18][INFO] : ................开始执行用例>>>GetMoneyChangeList<<<................
+[2023-09-13 19:53:24,709][GetMoneyChangeList.py:22][INFO] : >>>>开始组装请求头数据<<<<
+[2023-09-13 19:53:24,710][get_token.py:35][INFO] : 登录用户Test001，获取token
+[2023-09-13 19:53:24,947][get_token.py:38][INFO] : 请求成功
+[2023-09-13 19:53:24,947][get_token.py:42][INFO] : 获取Token数据成功
+[2023-09-13 19:53:24,947][GetMoneyChangeList.py:25][INFO] : >>>>请求头数据组装完成<<<<
+[2023-09-13 19:53:24,947][GetMoneyChangeList.py:27][INFO] : 开始执行用例：GetMoneyChangeList, 用例条件是>>>Normal<<<, 请求params是: >>>{'pageSize':10,'currPage':1,'startDate':'2023-09-09 00:00:00','endDate':'2023-09-09 23:59:59'}<<<
+[2023-09-13 19:53:25,106][GetMoneyChangeList.py:38][INFO] : 当前断言部分：预期:{'datas':{'currPage':1,'pageSize':10,'totalPage':1,'count':1,'data':[{'currency':'USD','money':10.0,'beforeMoney':122738.0,'afterMoney':122748.0,'remark':'领取洗码金额:10.00','orderType':7,'orderTypeName':'Receivewashmoney','createTime':'2023-09-0912:42:12'}]},'resp_code':0,'resp_msg':'succeed'},实际：{'datas': {'currPage': 1, 'pageSize': 10, 'totalPage': 1, 'count': 3, 'data': [{'currency': 'USD', 'money': 0.25, 'beforeMoney': 1018.0, 'afterMoney': 1018.25, 'remark': '领取洗码金额:0.25', 'orderType': 7, 'orderTypeName': 'Receive wash money', 'createTime': '2023-09-09 17:34:31'}, {'currency': 'USD', 'money': 5.0, 'beforeMoney': 1023.0, 'afterMoney': 1018.0, 'remark': '下注百家乐 玩法/金额:闲/5', 'orderType': 4, 'orderTypeName': 'betting', 'createTime': '2023-09-09 11:07:00'}, {'currency': 'USD', 'money': 3.5, 'beforeMoney': 1019.5, 'afterMoney': 1023.0, 'remark': '领取洗码金额:3.50', 'orderType': 7, 'orderTypeName': 'Receive wash money', 'createTime': '2023-09-09 10:44:21'}]}, 'resp_code': 0, 'resp_msg': 'succeed'}
+[2023-09-13 19:53:25,106][GetMoneyChangeList.py:22][INFO] : >>>>开始组装请求头数据<<<<
+[2023-09-13 19:53:25,107][get_token.py:35][INFO] : 登录用户Test001，获取token
+[2023-09-13 19:53:25,360][get_token.py:38][INFO] : 请求成功
+[2023-09-13 19:53:25,360][get_token.py:42][INFO] : 获取Token数据成功
+[2023-09-13 19:53:25,360][GetMoneyChangeList.py:25][INFO] : >>>>请求头数据组装完成<<<<
+[2023-09-13 19:53:25,360][GetMoneyChangeList.py:27][INFO] : 开始执行用例：BetRecords, 用例条件是>>>currPage error<<<, 请求params是: >>>{"currPage":"","pageSize":10,"startDate":"2023-09-09 00:00:00","endDate":"2023-09-09 23:59:59"}<<<
+[2023-09-13 19:53:25,495][GetMoneyChangeList.py:43][INFO] : 当前断言部分：预期:{'resp_code':1,'resp_msg':'failed'},实际：{'resp_code': 1, 'resp_msg': 'failed'}
+[2023-09-13 19:53:25,496][GetMoneyChangeList.py:22][INFO] : >>>>开始组装请求头数据<<<<
+[2023-09-13 19:53:25,497][get_token.py:35][INFO] : 登录用户Test001，获取token
+[2023-09-13 19:53:25,735][get_token.py:38][INFO] : 请求成功
+[2023-09-13 19:53:25,735][get_token.py:42][INFO] : 获取Token数据成功
+[2023-09-13 19:53:25,736][GetMoneyChangeList.py:25][INFO] : >>>>请求头数据组装完成<<<<
+[2023-09-13 19:53:25,737][GetMoneyChangeList.py:27][INFO] : 开始执行用例：BetRecords, 用例条件是>>>pageSize error<<<, 请求params是: >>>{"currPage":1,"pageSize":"","startDate":"2023-09-09 00:00:00","endDate":"2023-09-09 23:59:59"}<<<
+[2023-09-13 19:53:25,872][GetMoneyChangeList.py:43][INFO] : 当前断言部分：预期:{'resp_code':1,'resp_msg':'failed'},实际：{'resp_code': 1, 'resp_msg': 'failed'}
+[2023-09-13 19:53:25,873][GetMoneyChangeList.py:22][INFO] : >>>>开始组装请求头数据<<<<
+[2023-09-13 19:53:25,874][get_token.py:35][INFO] : 登录用户Test001，获取token
+[2023-09-13 19:53:26,120][get_token.py:38][INFO] : 请求成功
+[2023-09-13 19:53:26,120][get_token.py:42][INFO] : 获取Token数据成功
+[2023-09-13 19:53:26,121][GetMoneyChangeList.py:25][INFO] : >>>>请求头数据组装完成<<<<
+[2023-09-13 19:53:26,121][GetMoneyChangeList.py:27][INFO] : 开始执行用例：BetRecords, 用例条件是>>>startDate error<<<, 请求params是: >>>{"currPage":1,"pageSize":10,"startDate":"","endDate":"2023-09-09 23:59:59"}<<<
+[2023-09-13 19:53:26,252][GetMoneyChangeList.py:47][INFO] : 当前断言部分：预期:{'resp_code':1,'resp_msg':'Start date cannot be empty'},实际：{'resp_code': 1, 'resp_msg': 'Start date cannot be empty'}
+[2023-09-13 19:53:26,252][GetMoneyChangeList.py:22][INFO] : >>>>开始组装请求头数据<<<<
+[2023-09-13 19:53:26,253][get_token.py:35][INFO] : 登录用户Test001，获取token
+[2023-09-13 19:53:26,486][get_token.py:38][INFO] : 请求成功
+[2023-09-13 19:53:26,486][get_token.py:42][INFO] : 获取Token数据成功
+[2023-09-13 19:53:26,487][GetMoneyChangeList.py:25][INFO] : >>>>请求头数据组装完成<<<<
+[2023-09-13 19:53:26,487][GetMoneyChangeList.py:27][INFO] : 开始执行用例：BetRecords, 用例条件是>>>endDate error<<<, 请求params是: >>>{"currPage":1,"pageSize":10,"startDate":"2023-09-09 00:00:00","endDate":""}<<<
+[2023-09-13 19:53:26,626][GetMoneyChangeList.py:47][INFO] : 当前断言部分：预期:{'resp_code':1,'resp_msg':'End date cannot be empty'},实际：{'resp_code': 1, 'resp_msg': 'End date cannot be empty'}
+[2023-09-13 19:53:26,626][GetMoneyChangeList.py:22][INFO] : >>>>开始组装请求头数据<<<<
+[2023-09-13 19:53:26,628][get_token.py:35][INFO] : 登录用户Test001，获取token
+[2023-09-13 19:53:26,864][get_token.py:38][INFO] : 请求成功
+[2023-09-13 19:53:26,865][get_token.py:42][INFO] : 获取Token数据成功
+[2023-09-13 19:53:26,865][GetMoneyChangeList.py:25][INFO] : >>>>请求头数据组装完成<<<<
+[2023-09-13 19:53:26,865][GetMoneyChangeList.py:27][INFO] : 开始执行用例：BetRecords, 用例条件是>>>all variables error<<<, 请求params是: >>>{"currPage":"","pageSize":"","startDate":"","endDate":""}<<<
+[2023-09-13 19:53:27,034][GetMoneyChangeList.py:47][INFO] : 当前断言部分：预期:{'resp_code':1,'resp_msg':'Start date cannot be empty'},实际：{'resp_code': 1, 'resp_msg': 'Start date cannot be empty'}
+[2023-09-13 19:53:27,034][GetMoneyChangeList.py:58][INFO] : ................执行用例>>>GetMoneyChangeList<<<结束................
+[2023-09-13 19:53:27,034][GetOnlineNum.py:21][INFO] : ................开始执行用例>>>GetOnlineNum<<<................
+[2023-09-13 19:53:27,034][GetOnlineNum.py:26][INFO] : >>>>开始组装请求头数据<<<<
+[2023-09-13 19:53:27,035][get_token.py:35][INFO] : 登录用户Test001，获取token
+[2023-09-13 19:53:27,275][get_token.py:38][INFO] : 请求成功
+[2023-09-13 19:53:27,275][get_token.py:42][INFO] : 获取Token数据成功
+[2023-09-13 19:53:27,275][GetOnlineNum.py:29][INFO] : >>>>请求头数据组装完成<<<<
+[2023-09-13 19:53:27,275][GetOnlineNum.py:31][INFO] : 开始执行用例：GetOnlineNum, 用例条件是>>>Normal<<<, 请求params是 >>>:None<<<
+[2023-09-13 19:53:27,450][GetOnlineNum.py:42][INFO] : 当前断言部分：预期:{'datas':1018,'resp_code':0,'resp_msg':'succeed'},实际：{'datas': 1008, 'resp_code': 0, 'resp_msg': 'succeed'}
+[2023-09-13 19:53:27,450][GetOnlineNum.py:59][INFO] : ................执行用例>>>GetOnlineNum<<<结束................
+[2023-09-13 19:53:27,450][GetRichTop10.py:18][INFO] : ................开始执行用例>>>GetRichTop10<<<................
+[2023-09-13 19:53:27,450][GetRichTop10.py:24][INFO] : >>>>开始组装请求头数据<<<<
+[2023-09-13 19:53:27,452][get_token.py:35][INFO] : 登录用户Test001，获取token
+[2023-09-13 19:53:27,686][get_token.py:38][INFO] : 请求成功
+[2023-09-13 19:53:27,686][get_token.py:42][INFO] : 获取Token数据成功
+[2023-09-13 19:53:27,686][GetRichTop10.py:27][INFO] : >>>>请求头数据组装完成<<<<
+[2023-09-13 19:53:27,687][GetRichTop10.py:29][INFO] : 开始执行用例：GetRichTop10, 用例条件是>>>Normal<<<, 请求params是 >>>:None<<<
+[2023-09-13 19:53:27,845][GetRichTop10.py:40][INFO] : 当前断言部分：预期:{'datas':[{'sortNo':1,'username':'Test002','money':122748.0},{'sortNo':2,'username':'year_cny1','money':25000.0},{'sortNo':3,'username':'year05','money':17584.13},{'sortNo':4,'username':'year06','money':15489.31},{'sortNo':5,'username':'year_cny','money':12558.44},{'sortNo':6,'username':'oscar01','money':11000.0},{'sortNo':7,'username':'mike01','money':10287.75},{'sortNo':8,'username':'saba','money':10050.0},{'sortNo':9,'username':'year02','money':10004.5},{'sortNo':10,'username':'chezaiusd','money':10001.0}],'resp_code':0,'resp_msg':'succeed'},实际：{'datas': [{'sortNo': 1, 'username': 'Test002', 'money': 122748.0}, {'sortNo': 2, 'username': 'year_cny1', 'money': 25000.0}, {'sortNo': 3, 'username': 'year05', 'money': 17584.13}, {'sortNo': 4, 'username': 'year06', 'money': 15549.31}, {'sortNo': 5, 'username': 'year_cny', 'money': 12558.44}, {'sortNo': 6, 'username': 'oscar01', 'money': 11000.0}, {'sortNo': 7, 'username': 'disha', 'money': 10443.75}, {'sortNo': 8, 'username': 'mike01', 'money': 10287.75}, {'sortNo': 9, 'username': 'saba', 'money': 10050.0}, {'sortNo': 10, 'username': 'year02', 'money': 10004.5}], 'resp_code': 0, 'resp_msg': 'succeed'}
+[2023-09-13 19:53:27,846][GetRichTop10.py:51][INFO] : ................执行用例>>>GetRichTop10<<<结束................
+[2023-09-13 19:53:27,846][GetUserInfo.py:18][INFO] : ................开始执行用例>>>GetUserInfo<<<................
+[2023-09-13 19:53:27,846][GetUserInfo.py:24][INFO] : >>>>开始组装请求头数据<<<<
+[2023-09-13 19:53:27,847][get_token.py:35][INFO] : 登录用户Test001，获取token
+[2023-09-13 19:53:28,080][get_token.py:38][INFO] : 请求成功
+[2023-09-13 19:53:28,081][get_token.py:42][INFO] : 获取Token数据成功
+[2023-09-13 19:53:28,081][GetUserInfo.py:27][INFO] : >>>>请求头数据组装完成<<<<
+[2023-09-13 19:53:28,081][GetUserInfo.py:29][INFO] : 开始执行用例：GetUserInfo, 用例条件是>>>Normal<<<, 请求params是 >>>:None<<<
+[2023-09-13 19:53:28,222][GetUserInfo.py:40][INFO] : 当前断言部分：预期:{'datas':{'userId':894,'username':'Test001','playerType':1,'isTourists':'false','currency':'USD','symbol':'$','userMoney':1014.25,'remainBet':1931.0,'washCodeMoney':0.2,'chips':'1,2,5,10,100','customerSwitch':'false'},'resp_code':0,'resp_msg':'succeed'},实际：{'datas': {'userId': 894, 'username': 'Test001', 'playerType': 1, 'isTourists': False, 'currency': 'USD', 'symbol': '$', 'userMoney': 1014.25, 'remainBet': 1931.0, 'washCodeMoney': 0.2, 'chips': '1,2,5,10,100', 'customerSwitch': False}, 'resp_code': 0, 'resp_msg': 'succeed'}
+[2023-09-13 19:53:28,222][GetUserInfo.py:51][INFO] : ................执行用例>>>GetUserInfo<<<结束................
+[2023-09-13 19:53:28,222][GetWinTop10.py:18][INFO] : ................开始执行用例>>>GetWinTop10<<<................
+[2023-09-13 19:53:28,222][GetWinTop10.py:24][INFO] : >>>>开始组装请求头数据<<<<
+[2023-09-13 19:53:28,223][get_token.py:35][INFO] : 登录用户Test001，获取token
+[2023-09-13 19:53:28,464][get_token.py:38][INFO] : 请求成功
+[2023-09-13 19:53:28,464][get_token.py:42][INFO] : 获取Token数据成功
+[2023-09-13 19:53:28,464][GetWinTop10.py:27][INFO] : >>>>请求头数据组装完成<<<<
+[2023-09-13 19:53:28,464][GetWinTop10.py:29][INFO] : 开始执行用例：GetWinTop10, 用例条件是>>>Normal<<<, 请求params是 >>>:None<<<
+[2023-09-13 19:53:28,777][GetWinTop10.py:40][INFO] : 当前断言部分：预期:{'datas':[{'sortNo':1,'username':'disha','money':1100.0},{'sortNo':2,'username':'dileep','money':-10.0}],'resp_code':0,'resp_msg':'succeed'},实际：{'datas': [{'sortNo': 1, 'username': 'disha', 'money': 1100.0}, {'sortNo': 2, 'username': 'dileep', 'money': -10.0}], 'resp_code': 0, 'resp_msg': 'succeed'}
+[2023-09-13 19:53:28,778][GetWinTop10.py:51][INFO] : ................执行用例>>>GetWinTop10<<<结束................
+[2023-09-13 19:53:28,778][TorisitLogin.py:21][INFO] : ................开始执行用例>>>TouristsLogin<<<................
+[2023-09-13 19:53:28,778][TorisitLogin.py:26][INFO] : >>>>开始组装请求头数据<<<<
+[2023-09-13 19:53:28,779][get_token.py:35][INFO] : 登录用户Test001，获取token
+[2023-09-13 19:53:29,014][get_token.py:38][INFO] : 请求成功
+[2023-09-13 19:53:29,015][get_token.py:42][INFO] : 获取Token数据成功
+[2023-09-13 19:53:29,015][TorisitLogin.py:29][INFO] : >>>>请求头数据组装完成<<<<
+[2023-09-13 19:53:29,015][TorisitLogin.py:31][INFO] : 开始执行用例：GetWinTop10, 用例条件是>>>Normal<<<, 请求params是 >>>:None<<<
+[2023-09-13 19:53:29,367][TorisitLogin.py:42][INFO] : 当前断言部分：预期:{'datas':{'accessToken':'3521ffb7-c5a4-4783-99bb-b74c9d22f359'},'resp_code':0,'resp_msg':'succeed'},实际：{'datas': {'accessToken': '51bcf54f-6f2e-46d6-bb0f-c8b6dd144fd1'}, 'resp_code': 0, 'resp_msg': 'succeed'}
+[2023-09-13 19:53:29,367][TorisitLogin.py:54][INFO] : ................执行用例>>>TouristsLogin<<<结束................
+[2023-09-13 19:53:29,367][UserLogin.py:16][INFO] : ................开始执行用例UserLogin................
+[2023-09-13 19:53:29,367][UserLogin.py:23][INFO] : 当前执行用例：UserLogin, 请求url:/game-server/game/api/v1/common/login
+[2023-09-13 19:53:29,683][UserLogin.py:38][INFO] : 当前断言部分：预期:{"datas":{"accessToken": ""},"resp_code": 0,"resp_msg":"succeed"},实际：{'datas': {'accessToken': 'bfdcd707-1990-4581-8883-5e0f95d1910f'}, 'resp_code': 0, 'resp_msg': 'succeed'}
+[2023-09-13 19:53:29,683][UserLogin.py:72][INFO] : ................执行用例UserLogin结束................
+[2023-09-13 19:53:29,683][UserLogin.py:16][INFO] : ................开始执行用例UserLogin................
+[2023-09-13 19:53:29,683][UserLogin.py:23][INFO] : 当前执行用例：UserLogin, 请求url:/game-server/game/api/v1/common/login
+[2023-09-13 19:53:29,881][UserLogin.py:44][INFO] : 当前断言部分：预期:{'resp_code':1,'resp_msg':'The password is wrong, you can try 2 more times'},实际：{'resp_code': 1, 'resp_msg': 'The password is wrong, you can try 2 more times'}
+[2023-09-13 19:53:29,881][UserLogin.py:72][INFO] : ................执行用例UserLogin结束................
+[2023-09-13 19:53:29,882][UserLogin.py:16][INFO] : ................开始执行用例UserLogin................
+[2023-09-13 19:53:29,882][UserLogin.py:23][INFO] : 当前执行用例：UserLogin, 请求url:/game-server/game/api/v1/common/login
+[2023-09-13 19:53:30,024][UserLogin.py:50][INFO] : 当前断言部分：预期:{'resp_code':1,'resp_msg':'wrong user name or password'},实际：{'resp_code': 1, 'resp_msg': 'wrong user name or password'}
+[2023-09-13 19:53:30,024][UserLogin.py:72][INFO] : ................执行用例UserLogin结束................
+[2023-09-13 19:53:30,024][UserLogin.py:16][INFO] : ................开始执行用例UserLogin................
+[2023-09-13 19:53:30,024][UserLogin.py:23][INFO] : 当前执行用例：UserLogin, 请求url:/game-server/game/api/v1/common/login
+[2023-09-13 19:53:30,154][UserLogin.py:56][INFO] : 当前断言部分：预期:{'resp_code':1,'resp_msg':'Account cannot be empty'},实际：{'resp_code': 1, 'resp_msg': 'Account cannot be empty'}
+[2023-09-13 19:53:30,154][UserLogin.py:72][INFO] : ................执行用例UserLogin结束................
+[2023-09-13 19:53:30,154][UserLogin.py:16][INFO] : ................开始执行用例UserLogin................
+[2023-09-13 19:53:30,154][UserLogin.py:23][INFO] : 当前执行用例：UserLogin, 请求url:/game-server/game/api/v1/common/login
+[2023-09-13 19:53:30,292][UserLogin.py:62][INFO] : 当前断言部分：预期:{'resp_code':1,'resp_msg':'password cannot be blank'},实际：{'resp_code': 1, 'resp_msg': 'password can not be blank'}
+[2023-09-13 19:53:30,292][UserLogin.py:72][INFO] : ................执行用例UserLogin结束................
+[2023-09-13 19:53:30,292][UserLogin.py:16][INFO] : ................开始执行用例UserLogin................
+[2023-09-13 19:53:30,292][UserLogin.py:23][INFO] : 当前执行用例：UserLogin, 请求url:/game-server/game/api/v1/common/login
+[2023-09-13 19:53:30,444][UserLogin.py:50][INFO] : 当前断言部分：预期:{'resp_code':1,'resp_msg':'wrong user name or password'},实际：{'resp_code': 1, 'resp_msg': 'wrong user name or password'}
+[2023-09-13 19:53:30,444][UserLogin.py:72][INFO] : ................执行用例UserLogin结束................
+[2023-09-13 19:53:30,444][UserLogout.py:18][INFO] : ................开始执行用例>>>UserLogout<<<................
+[2023-09-13 19:53:30,445][UserLogout.py:24][INFO] : >>>>开始组装请求头数据<<<<
+[2023-09-13 19:53:30,446][get_token.py:35][INFO] : 登录用户Test001，获取token
+[2023-09-13 19:53:30,696][get_token.py:38][INFO] : 请求成功
+[2023-09-13 19:53:30,698][get_token.py:42][INFO] : 获取Token数据成功
+[2023-09-13 19:53:30,698][UserLogout.py:27][INFO] : >>>>请求头数据组装完成<<<<
+[2023-09-13 19:53:30,698][UserLogout.py:29][INFO] : 开始执行用例：UserLogout, 用例条件是>>>Normal<<<, 请求params是 >>>:None<<<
+[2023-09-13 19:53:30,861][UserLogout.py:40][INFO] : 当前断言部分：预期:{'resp_code':0,'resp_msg':'succeed'},实际：{'resp_code': 0, 'resp_msg': 'succeed'}
+[2023-09-13 19:53:30,861][UserLogout.py:51][INFO] : ................执行用例>>>UserLogout<<<结束................
+[2023-09-13 19:53:30,862][get_token.py:35][INFO] : 登录用户Test001，获取token
+[2023-09-13 19:53:31,089][get_token.py:38][INFO] : 请求成功
+[2023-09-13 19:53:31,089][get_token.py:42][INFO] : 获取Token数据成功
+[2023-09-13 19:53:31,089][GetBannerList.py:23][INFO] : 当前执行用例：GetPic, 请求url:/game-server/game/api/v1/lobby/getBannerList
+[2023-09-13 19:53:31,224][GetBannerList.py:36][INFO] : 当前断言部分：预期:{"datas":[{"web":"/kkvideo/en_banner_01.png","sort": 0}],"resp_code":0,"resp_msg":"succeed"},实际：{'datas': [{'web': '/kkvideo/en_banner_01.png', 'sort': 0}], 'resp_code': 0, 'resp_msg': 'succeed'}
